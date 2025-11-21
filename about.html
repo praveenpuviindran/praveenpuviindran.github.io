@@ -1,95 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Praveen Puviindran</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>About — Praveen Puviindran</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body data-theme="dark">
-  <header class="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-mark">P</span>
-        <span class="logo-text">Praveen</span>
-      </a>
-      <nav class="nav-links">
-        <a href="about.html" class="active">About</a>
-        <a href="postgrad.html">Post-Graduate</a>
-        <a href="undergrad.html">Undergraduate</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="leadership.html">Leadership</a>
-        <a href="contact.html">Contact</a>
-        <button id="themeToggle" class="theme-toggle">
-          <span>🌙</span><span>Dark</span>
-        </button>
-      </nav>
-    </div>
-  </header>
 
-  <main class="page">
+<body data-theme="dark">
+
+<header class="site-header">
+  <div class="container header-content">
+    <div class="logo">
+      <div class="logo-mark">P</div>
+      <span class="logo-text">About Me</span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="postgrad.html">Post-Graduate Work</a>
+      <a href="undergrad.html">Undergraduate Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="toggle-wrapper"><div class="toggle-circle"></div></div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
     <h1>About Me</h1>
-    <p class="page-intro">
-      I’m a data scientist working at the intersection of machine learning, computational medicine,
-      and applied statistics. I like building pipelines that don’t just predict things,
-      but actually change how people reason about existing systems and decisions.
+    <p class="section-intro">
+      I'm a data scientist and computational researcher focused on applying machine learning, quantitative modeling,
+      and statistical inference to biomedical, clinical, and sports intelligence problems.
     </p>
 
-    <section class="section">
-      <h2>What I’m interested in</h2>
-      <p>
-        I’m interested in using data science, quantitative modeling, and machine learning to address complex
-        challenges in healthcare and biomedical research. That usually means taking noisy clinical or biological
-        data, structuring it in a clean way, and then applying models that are interpretable enough to inform
-        actual decisions.
-      </p>
-      <p>
-        I’m especially drawn to problems where statistical methods and domain knowledge both matter:
-        multi-omics, treatment response heterogeneity, patient-reported outcomes, and
-        more cross-discplinary areas of research that can be combined for well-rounded insights.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Education</h2>
-      <div class="card">
-        <h3>University of North Carolina at Chapel Hill</h3>
-        <p class="meta">
-          <span>B.S. Statistics and Analytics</span>
-          <span>Aug 2021 – May 2025</span>
-          <span>Chapel Hill, NC</span>
-        </p>
+    <div class="about-grid">
+      <div>
+        <h2>Background</h2>
         <p>
-          Built a foundation in probability, optimization, and statistical modeling, while applying these
-          ideas to biology, public health, and sports analytics through research and projects.
+          I completed my B.S. in Statistics & Analytics at UNC Chapel Hill, where I conducted research in cancer
+          pharmacology, virology, neurology, and medical imaging. My work ranged from wet-lab experimentation to
+          computational modeling, building ML classifiers for RNA-seq tumor data, analyzing hippocampal dynamics
+          with Dynamic Causal Modeling, and studying microbiome shifts in radiation oncology.
         </p>
-        <p><strong>Selected coursework:</strong></p>
-        <ul class="tight">
-          <li>Machine Learning</li>
-          <li>Advanced Methods of Data Analysis</li>
-          <li>Stochastic Modeling</li>
-          <li>Optimization</li>
-          <li>Linear Algebra</li>
-          <li>Multivariate Calculus</li>
-          <li>Probability</li>
-          <li>Molecular Genetics & Cell Biology</li>
-        </ul>
-      </div>
-    </section>
 
-    <section class="section">
-      <h2>How I work</h2>
+        <p>
+          I now work as a Postbaccalaureate Research Fellow at the NIH Framingham Heart Study, where I build machine
+          learning pipelines over 3,000 proteins in 25,000+ participants to develop biomarker-driven diagnostic tools.
+        </p>
+      </div>
+
       <div class="card">
-        <ul class="tight">
-          <li>Start with the question and how the result will be used, answer the "why".</li>
-          <li>Keep pipelines reproducible: versioned data, documented transformations, and clean code.</li>
-          <li>Translate results for both technical and non-technical audiences.</li>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Python — pandas, NumPy, scikit-learn, PyTorch</li>
+          <li>R — tidyverse, caret</li>
+          <li>SQL, MATLAB</li>
+          <li>Machine Learning, Model Interpretability (SHAP)</li>
+          <li>ETL pipelines, reproducible modeling workflows</li>
         </ul>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <script src="script.js"></script>
+    <br>
+    <a href="projects.html" class="btn primary">Explore My Work</a>
+  </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>

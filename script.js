@@ -1,22 +1,19 @@
-// Mobile nav toggle
-const navToggle = document.getElementById("navToggle");
-const nav = document.getElementById("nav");
+// Dark/Light Mode Toggle
+const toggle = document.querySelector('.toggle-wrapper');
+const body = document.body;
 
-if (navToggle && nav) {
-  navToggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
+toggle.addEventListener('click', () => {
+  const current = body.getAttribute('data-theme');
+  const newTheme = current === 'light' ? 'dark' : 'light';
+  body.setAttribute('data-theme', newTheme);
+});
+
+// Mobile Nav Toggle
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
   });
-
-  // Close nav when you click a link (on mobile)
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-    });
-  });
-}
-
-// Set current year in footer
-const yearSpan = document.getElementById("year");
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
 }

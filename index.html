@@ -1,74 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Praveen Puviindran | Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praveen Puviindran</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body data-theme="dark">
-  <header class="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-mark">P</span>
-        <span class="logo-text">Praveen</span>
-      </a>
-      <nav class="nav-links">
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <div class="logo-mark">P</div>
+        <span class="logo-text">Praveen Puviindran</span>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="postgrad.html">Post-Graduate</a>
-        <a href="undergrad.html">Undergraduate</a>
+        <a href="postgrad.html">Post-Graduate Work</a>
+        <a href="undergrad.html">Undergraduate Research</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="leadership.html">Leadership</a>
         <a href="contact.html">Contact</a>
-        <button id="themeToggle" class="theme-toggle">
-          <span>🌙</span><span>Dark</span>
-        </button>
       </nav>
+
+      <div class="toggle-wrapper"><div class="toggle-circle"></div></div>
     </div>
   </header>
 
-  <main class="hero">
-    <section class="hero-main">
-      <h1>Hey, I'm Praveen.</h1>
-      <p>
-        I build data and machine learning pipelines for biomedical, public health,
-        and sports domains — turning messy, high-dimensional datasets into
-        models that say something useful about the real world.
-      </p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Data Scientist & Computational Researcher</h1>
+        <p class="hero-subtitle">
+          I build machine learning pipelines, statistical models, and analytical tools for clinical,
+          biomedical, and sports intelligence applications. My work spans proteomics, oncology, fMRI modeling,
+          ML-driven diagnostics, and sports analytics.
+        </p>
 
-      <div class="hero-tags">
-        <span class="hero-tag">Data Science</span>
-        <span class="hero-tag">Computational Medicine</span>
-        <span class="hero-tag">Machine Learning</span>
-        <span class="hero-tag">Sports Analytics</span>
+        <div class="hero-actions">
+          <a href="postgrad.html" class="btn primary">Post-Graduate Work</a>
+          <a href="projects.html" class="btn secondary">Projects</a>
+          <a href="about.html" class="btn secondary">About Me</a>
+        </div>
       </div>
 
-      <div class="hero-actions">
-        <a href="postgrad.html" class="btn btn-primary">See current work</a>
-        <a href="projects.html" class="btn btn-ghost">Browse projects</a>
+      <div class="hero-card card">
+        <div class="hero-tag">Current Work</div>
+        <h2>NIH Postbaccalaureate Fellow</h2>
+        <p>Analyzing large-scale proteomic datasets (N=25K) to identify biomarkers of heavy menstrual bleeding and engineer predictive risk scores.</p>
+        <ul class="hero-list">
+          <li>Machine Learning & Statistical Modeling</li>
+          <li>High-Dimensional Proteomics</li>
+          <li>Translational Clinical Research</li>
+        </ul>
       </div>
+    </div>
+  </section>
 
-      <p class="hero-note">
-        Currently: NIH Post-bac at the Framingham Heart Study (platelet / proteomic genetics) and
-        building the NBA Synergy Engine — a DeepSet-based model of NBA lineup chemistry.
-      </p>
-    </section>
-
-    <aside class="hero-card">
-      <h2>What I care about</h2>
-      <p>
-        Clean questions before complex models. Reproducible pipelines over fragile hacks.
-        Work that connects directly to patients, systems, or decision-makers.
-      </p>
-      <ul class="tight">
-        <li>End-to-end ML workflows (data → model → interpretation)</li>
-        <li>Connecting statistical methods to real-world impact</li>
-        <li>Keeping code readable and explainable</li>
-      </ul>
-    </aside>
-  </main>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
