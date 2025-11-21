@@ -8,12 +8,13 @@ toggle.addEventListener('click', () => {
   body.setAttribute('data-theme', newTheme);
 });
 
-// Mobile Nav Toggle
-const navToggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.nav');
-
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
   });
-}
+});
