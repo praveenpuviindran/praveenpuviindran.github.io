@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Praveen Puviindran</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">P</span>
+        <span class="logo-text">Praveen</span>
+      </a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="postgrad.html">Post-Graduate</a>
+        <a href="undergrad.html">Undergraduate</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="contact.html">Contact</a>
+        <button id="themeToggle" class="theme-toggle">
+          <span>🌙</span><span>Dark</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1>Projects</h1>
+    <p class="page-intro">
+      Selected data science and analytics projects from coursework and independent work.
+      These sit alongside my research but are more focused on modeling, forecasting, and quantitative storytelling.
+    </p>
+
+    <section class="section">
+      <h2>Early Diabetes Risk Prediction</h2>
+      <div class="card">
+        <p class="meta">
+          <span>Nov 2024</span>
+          <span>Python · SQL · Random Forest · SMOTE · SHAP</span>
+        </p>
+        <ul class="tight">
+          <li>Processed 253,680 survey responses from the BRFSS dataset, focusing on risk factors for early diabetes.</li>
+          <li>Queried and filtered data using SQL, then engineered features related to blood pressure, BMI, cholesterol, and lifestyle factors.</li>
+          <li>Trained Random Forest models with SMOTE-based class balancing to reach ~85% accuracy and a Quadratic Weighted Kappa score of 0.85.</li>
+          <li>Used SHAP to inspect feature influence and flag regions of feature space with higher misclassification risk, helping refine potential screening strategies.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>NBA Game Outcome Forecasting</h2>
+      <div class="card">
+        <p class="meta">
+          <span>Apr 2024</span>
+          <span>Python · Random Forest · Regression · Sports Analytics</span>
+        </p>
+        <ul class="tight">
+          <li>Built Random Forest models on 1,100+ NBA games to forecast game stats and outcomes, achieving R² ≈ 0.837 for key metrics.</li>
+          <li>Integrated real-time API data with historical box score statistics to drive up-to-date forecasts.</li>
+          <li>Simulated alternative game outcomes to explore optimized game plans and highlight outlier strategies for specific teams.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>In-Depth Analysis of 9-Ball Billiards</h2>
+      <div class="card">
+        <p class="meta">
+          <span>Jan 2024 – Feb 2024</span>
+          <span>R · Multiple Regression</span>
+        </p>
+        <ul class="tight">
+          <li>Analyzed 150+ 9-ball games to study shot patterns, pocket preferences, and break outcomes.</li>
+          <li>Built multiple regression models in R to test whether certain phases of the game had higher success rates.</li>
+          <li>Found a ~16% higher success rate for pocketing balls during the middle phase of games and no significant advantage from initial break performance or dominant hand.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Evolution of Offense and Defense in the NBA</h2>
+      <div class="card">
+        <p class="meta">
+          <span>Jun 2023 – Aug 2023</span>
+          <span>Python/R · Regression · Feature Engineering</span>
+        </p>
+        <ul class="tight">
+          <li>Analyzed ~40 years of NBA team data to quantify how offensive and defensive profiles have evolved.</li>
+          <li>Showed that 3-point efficiency is roughly a 30% stronger predictor of team success than traditional defensive metrics in modern eras.</li>
+          <li>Built predictive models for offensive and defensive ratings, informing how perimeter shooting has come to dominate championship outcomes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Crime & School Infrastructure Impact on SAT Scores</h2>
+      <div class="card">
+        <p class="meta">
+          <span>Jun 2023 – Aug 2023</span>
+          <span>Regression · Education Analytics</span>
+        </p>
+        <ul class="tight">
+          <li>Analyzed data from 100+ schools to study how violent and non-violent crime correlate with SAT performance.</li>
+          <li>Found that violent crime showed a negative correlation (~–0.45) with SAT scores, while non-violent crime had negligible association.</li>
+          <li>Modeled SAT score trajectories using school demographics and city infrastructure metrics, offering potential insights for policymakers.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

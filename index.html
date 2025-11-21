@@ -3,234 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Praveen | Portfolio</title>
-  <meta name="description" content="Praveen's personal portfolio – data science, computational medicine, and research." />
+  <title>Praveen Puviindran | Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <!-- Header / Navigation -->
-  <header class="site-header">
-    <div class="container header-content">
-      <div class="logo">
+<body data-theme="dark">
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
         <span class="logo-mark">P</span>
         <span class="logo-text">Praveen</span>
-      </div>
-
-      <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      </a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="postgrad.html">Post-Graduate</a>
+        <a href="undergrad.html">Undergraduate</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="contact.html">Contact</a>
+        <button id="themeToggle" class="theme-toggle">
+          <span>🌙</span><span>Dark</span>
+        </button>
       </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow">Portfolio</p>
-          <h1>Hey, I'm Praveen.</h1>
-          <p class="hero-subtitle">
-            I work at the intersection of <strong>data science</strong>, <strong>computational medicine</strong>, and <strong>research</strong> — building analyses, tools, and insights that actually matter.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn primary">View projects</a>
-            <a href="#contact" class="btn secondary">Contact me</a>
-          </div>
-          <p class="hero-note">
-            Open to collaborations, research, and data-driven projects.
-          </p>
-        </div>
+  <main class="hero">
+    <section class="hero-main">
+      <h1>Hey, I'm Praveen.</h1>
+      <p>
+        I build data and machine learning pipelines for biomedical, public health,
+        and sports domains — turning messy, high-dimensional datasets into
+        models that say something useful about the real world.
+      </p>
 
-        <div class="hero-card">
-          <div class="hero-tag">Currently</div>
-          <h2>Data & Research</h2>
-          <p>
-            Focused on statistics, analytics, and computational approaches applied to biology, pharmacology, and medicine.
-          </p>
-          <ul class="hero-list">
-            <li>Statistics & data science</li>
-            <li>Research analysis & reproducible code</li>
-            <li>Communicating results clearly</li>
-          </ul>
-        </div>
+      <div class="hero-tags">
+        <span class="hero-tag">Data Science</span>
+        <span class="hero-tag">Computational Medicine</span>
+        <span class="hero-tag">Machine Learning</span>
+        <span class="hero-tag">Sports Analytics</span>
       </div>
+
+      <div class="hero-actions">
+        <a href="postgrad.html" class="btn btn-primary">See current work</a>
+        <a href="projects.html" class="btn btn-ghost">Browse projects</a>
+      </div>
+
+      <p class="hero-note">
+        Currently: NIH Post-bac at the Framingham Heart Study (platelet / proteomic genetics) and
+        building the NBA Synergy Engine — a DeepSet-based model of NBA lineup chemistry.
+      </p>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-      <div class="container">
-        <h2>About</h2>
-        <p class="section-intro">
-          Short version: I like solving real problems with data, and I care a lot about doing it cleanly and transparently.
-        </p>
-
-        <div class="about-grid">
-          <div>
-            <h3>Who I am</h3>
-            <p>
-              I'm Praveen, a statistics / data science person with a strong interest in
-              computational medicine and research. I enjoy building analyses that bridge
-              raw data, rigorous methods, and real-world impact.
-            </p>
-            <p>
-              This site is a living snapshot of what I’m working on, learning, and shipping.
-            </p>
-          </div>
-          <div>
-            <h3>What I care about</h3>
-            <ul class="about-list">
-              <li>Clear questions before fancy models.</li>
-              <li>Readable, reproducible code over hacks.</li>
-              <li>Work that connects to real people and outcomes.</li>
-              <li>Learning fast and teaching what I learn.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section section-alt" id="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <p class="section-intro">
-          Tools and concepts I actually use and care about.
-        </p>
-
-        <div class="skills-grid">
-          <div class="card">
-            <h3>Data & Programming</h3>
-            <ul>
-              <li>Python (pandas, numpy, matplotlib, etc.)</li>
-              <li>R / statistics workflows</li>
-              <li>SQL & data wrangling</li>
-              <li>Basic web tools (HTML, CSS, JS)</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Stats & Modeling</h3>
-            <ul>
-              <li>Experimental design, hypothesis testing</li>
-              <li>Regression & classification basics</li>
-              <li>Reproducible analysis & reporting</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Research & Communication</h3>
-            <ul>
-              <li>Literature review & synthesis</li>
-              <li>Figure / table design</li>
-              <li>Technical writing & presentations</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <p class="section-intro">
-          A few things I've worked on or am shaping. Swap these out with your real projects.
-        </p>
-
-        <div class="projects-grid">
-          <article class="card project-card">
-            <h3>Project One</h3>
-            <p>
-              Short, clear description of what this is, what problem it tackles,
-              and what you actually did in it.
-            </p>
-            <ul class="project-meta">
-              <li>Python / pandas</li>
-              <li>Exploratory analysis</li>
-            </ul>
-            <!-- Replace # with real link later -->
-            <a href="#" class="project-link">View more (GitHub / report)</a>
-          </article>
-
-          <article class="card project-card">
-            <h3>Project Two</h3>
-            <p>
-              Another project: maybe a research analysis, data pipeline, or a
-              visualization-heavy story.
-            </p>
-            <ul class="project-meta">
-              <li>R / ggplot2</li>
-              <li>Reproducible report</li>
-            </ul>
-            <a href="#" class="project-link">View more</a>
-          </article>
-
-          <article class="card project-card">
-            <h3>Project Three</h3>
-            <p>
-              Could be a side project, coursework portfolio, or anything that
-              shows how you think and build.
-            </p>
-            <ul class="project-meta">
-              <li>SQL</li>
-              <li>Dashboard / visualization</li>
-            </ul>
-            <a href="#" class="project-link">View more</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section section-alt" id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p class="section-intro">
-          Want to work together, ask a question, or just talk shop? Reach out.
-        </p>
-
-        <div class="contact-grid">
-          <div>
-            <h3>Say hello</h3>
-            <p>
-              The easiest way to reach me is email. I read everything and reply
-              when I have something useful to say.
-            </p>
-            <!-- Replace with your real email -->
-            <a href="mailto:youremail@example.com" class="btn primary">
-              Email me
-            </a>
-          </div>
-          <div>
-            <h3>Elsewhere</h3>
-            <ul class="contact-list">
-              <!-- Replace # with your real profiles -->
-              <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="#" target="_blank" rel="noopener">CV / Resume (PDF)</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <aside class="hero-card">
+      <h2>What I care about</h2>
+      <p>
+        Clean questions before complex models. Reproducible pipelines over fragile hacks.
+        Work that connects directly to patients, systems, or decision-makers.
+      </p>
+      <ul class="tight">
+        <li>End-to-end ML workflows (data → model → interpretation)</li>
+        <li>Connecting statistical methods to real-world impact</li>
+        <li>Keeping code readable and explainable</li>
+      </ul>
+    </aside>
   </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <p>© <span id="year"></span> Praveen. All rights reserved.</p>
-      <p class="footer-note">Built with plain HTML, CSS, and a little JavaScript.</p>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
