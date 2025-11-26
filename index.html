@@ -9,7 +9,6 @@
 
 <body data-theme="dark">
 
-<!-- NAVBAR -->
 <header class="site-header">
   <div class="container header-content">
     <div class="logo">
@@ -19,6 +18,7 @@
 
     <nav class="nav">
       <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#postgrad">Post-Graduate Work</a>
       <a href="#undergrad">Undergraduate Work</a>
       <a href="#projects">Projects</a>
@@ -31,55 +31,58 @@
   </div>
 </header>
 
+
 <!-- HOME -->
-<section id="home" class="section hero">
+<section id="home" class="section hero fade">
   <div class="container hero-grid">
     <div class="hero-text">
-      <h1>Data Science & Computational Research</h1>
+      <h1>Data Science and Computational Research</h1>
       <p class="hero-subtitle">
-        I build machine learning systems, quantitative models, and analytical pipelines for biomedical,
-        clinical, and sports intelligence applications.
+        I build machine learning systems, statistical models, and research pipelines for biomedical,
+        clinical, and sports analytics problems. My work focuses on high-dimensional data, clear
+        questions, and reproducible methods.
       </p>
 
       <div class="hero-actions">
-        <a href="#postgrad" class="btn primary">Post-Graduate Work</a>
+        <a href="#about" class="btn primary">About Me</a>
         <a href="#projects" class="btn secondary">Projects</a>
       </div>
     </div>
   </div>
 </section>
 
+
 <!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="section fade">
   <div class="container">
     <h1>About Me</h1>
 
     <p class="section-intro">
-      I'm a data scientist and computational researcher focused on applying machine learning,
-      quantitative modeling, and statistical inference to biomedical, clinical, and sports-intelligence problems.
-      I enjoy building end-to-end pipelines that translate high-dimensional datasets into real-world insights
-      and actionable decision-making tools.
+      I'm a data scientist who works across biomedical research, clinical modeling, and sports analytics.
+      I care about clean code, grounded methods, and building things that actually help people make decisions.
     </p>
 
     <div class="about-grid">
       <div>
         <h2>Background</h2>
         <p>
-          I completed my B.S. in Statistics & Analytics at UNC Chapel Hill, where I conducted research in cancer
-          pharmacology, virology, neurology, RNA-seq modeling, and medical imaging. My work bridged wet-lab and
-          computational science — from 20-day drug-dosing experiments to building machine learning classifiers for
-          tumor subtypes and modeling directional brain connectivity using fMRI.
+          I completed my B.S. in Statistics and Analytics at UNC Chapel Hill. I spent my undergrad working in
+          cancer pharmacology, virology, neurology, RNA-seq modeling, and medical imaging. Some of that work
+          involved wet-lab experiments like 20-day chemotherapy dosing studies. Other parts focused on
+          computational modeling like tumor subtype classification and directional connectivity analysis in fMRI.
         </p>
 
         <p>
-          I now work as a Postbaccalaureate Research Fellow at the NIH Framingham Heart Study, where I analyze
-          large-scale proteomic datasets (3,000+ proteins across 25,000+ participants) to identify biomarkers,
-          uncover causal pathways, and build risk-score systems for heavy menstrual bleeding.
+          I now work at the Framingham Heart Study as a postbaccalaureate research fellow. My work focuses on
+          large-scale proteomics. I analyze data on more than 3000 proteins measured across 25,000 participants.
+          My goal is to identify biomarkers for heavy menstrual bleeding and build risk-score tools that shorten
+          the time it takes for patients to get diagnosed.
         </p>
 
         <p>
-          Outside of research, I am a lifelong pianist and piano teacher. I perform classical repertoire, arrange fusion pieces blending Tamil and Western styles, and teach students technique,
-          expression, and musical interpretation. You can explore my musical background here:
+          I'm also a pianist and piano teacher. I grew up playing classical music and still perform regularly.
+          I also teach technique and interpretation, help students prepare for auditions, and arrange pieces that
+          mix classical, Tamil, and Western styles. You can see my music work here:
           <a href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/"
              class="project-link" target="_blank">Piano Website</a>.
         </p>
@@ -88,11 +91,11 @@
       <div class="card">
         <h3>Technical Skills</h3>
         <ul>
-          <li>Python — pandas, NumPy, scikit-learn, PyTorch</li>
-          <li>R — tidyverse, dplyr, ggplot2, matplotlib seaborn, bioconductor, caret</li>
-          <li>SQL, MATLAB</li>
-          <li>Machine Learning, Deep Learning</li>
-          <li>ETL pipelines, reproducible modeling workflows</li>
+          <li>Python: pandas, NumPy, scikit-learn, PyTorch</li>
+          <li>R: tidyverse, dplyr, ggplot2, caret, Bioconductor</li>
+          <li>SQL and ETL pipelines</li>
+          <li>Machine learning and deep learning modeling</li>
+          <li>Reproducible workflows and statistical analysis</li>
         </ul>
       </div>
     </div>
@@ -102,211 +105,157 @@
   </div>
 </section>
 
+
 <!-- POSTGRAD -->
-<section id="postgrad" class="section">
+<section id="postgrad" class="section fade section-split">
   <div class="container">
     <h1>Post-Graduate Work</h1>
 
     <div class="card">
-      <h3>NIH — Postbaccalaureate Research Fellow (2025–Present)</h3>
+      <h3>NIH | Postbaccalaureate Research Fellow</h3>
       <p>
-        Conducting large-scale proteomic modeling to identify biomarkers of heavy menstrual bleeding (HMB)
-        across 25,000+ participants. Building machine learning pipelines, pathway-enrichment analytics, and
-        diagnostic protein panels.
+        At the Framingham Heart Study I work on proteomic modeling related to heavy menstrual bleeding.
+        The goal is to identify biomarkers and build prediction tools that can support earlier diagnosis.
       </p>
       <ul>
-        <li>Engineered proteomic ETL workflows</li>
-        <li>Modeled 3,000+ proteins using LASSO and network analysis</li>
-        <li>Built risk score systems for clinical translation</li>
+        <li>Built ETL pipelines for 3000+ proteins across 25,000 participants</li>
+        <li>Used LASSO, correlation networks, and pathway methods for feature selection</li>
+        <li>Developed early detection risk-score models</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>NBA Synergy Engine — Moneyball 2.0</h3>
+      <h3>NBA Synergy Engine</h3>
       <p>
-        Built a permutation-invariant DeepSet neural network that predicts lineup chemistry using 11 seasons
-        of tracking data and optimizes roster construction.
+        A lineup-chemistry modeling tool that uses tracking data to predict on-court synergy.
+        The project includes a DeepSet model, shot-pattern clustering, and an AI GM that selects
+        the best fifth player for any four-player core.
       </p>
       <ul>
-        <li>ETL pipeline ingesting 170k+ possessions (SQL + Python)</li>
-        <li>GMM + PCA archetype modeling (10 playstyles)</li>
-        <li>DeepSet neural net (PyTorch) — RMSE ≈ 39.94</li>
-        <li>AI GM: optimal 5th-player generator</li>
+        <li>170,000+ possessions processed with Python and SQL</li>
+        <li>PCA and Gaussian Mixture clustering for archetype modeling</li>
+        <li>DeepSet architecture built in PyTorch</li>
       </ul>
+      <a href="https://nba-synergy-engine.streamlit.app/" target="_blank" class="btn secondary">Visit Live Demo</a>
     </div>
   </div>
 </section>
 
+
 <!-- UNDERGRAD -->
-<section id="undergrad" class="section">
+<section id="undergrad" class="section fade">
   <div class="container">
     <h1>Undergraduate Work</h1>
 
-    <div class="card">
-      <h3>Kaposi Sarcoma RNA-seq Subtype Classifier (UNC)</h3>
-      <p>
-        Built PCA + LASSO/SVM/RF/MLP classifier for HIV+ tumor subtypes (ROC-AUC 0.95). Identified 6-gene panel
-        using RFE + SHAP.
-      </p>
-    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Kaposi Sarcoma RNA-seq Classifier</h3>
+        <p>Built PCA and LASSO/SVM/RF/MLP models for HIV-positive tumor subtyping. Achieved ROC-AUC of 0.95. Identified a six-gene panel using RFE and SHAP.</p>
+      </div>
 
-    <div class="card">
-      <h3>Cancer Pharmacology — Dose Scheduling Research</h3>
-      <p>
-        Led 20-day chemotherapeutic dosing experiments in lung cancer lines (NCI-H2228, HCC827). Analyzed viability
-        curves using R & Mathematica.
-      </p>
-    </div>
+      <div class="card">
+        <h3>Cancer Pharmacology</h3>
+        <p>Ran 20-day chemotherapy dosing studies in lung cancer cell lines and modeled viability curves using R and Mathematica.</p>
+      </div>
 
-    <div class="card">
-      <h3>Neurology — Dynamic Causal Modeling (fMRI)</h3>
-      <p>
-        Performed DCM directionality modeling of hippocampal regions in epilepsy. Used SPM for preprocessing
-        (realignment, normalization).
-      </p>
-    </div>
+      <div class="card">
+        <h3>Neurology</h3>
+        <p>Used SPM to model directional connectivity between hippocampal regions in epilepsy using dynamic causal modeling.</p>
+      </div>
 
-    <div class="card">
-      <h3>Oncology Microbiome (MD Anderson)</h3>
-      <p>
-        QIIME2 analysis of 16S samples to model radiation-induced microbiome shifts. PERMANOVA + PCoA analyses.
-      </p>
-    </div>
+      <div class="card">
+        <h3>Oncology Microbiome</h3>
+        <p>Analyzed 16S datasets with QIIME2 to study radiation-induced microbiome changes. Ran PERMANOVA and PCoA analyses.</p>
+      </div>
 
-    <div class="card">
-      <h3>Oncology Telehealth Research (UNC Pharmacy)</h3>
-      <p>
-        Qualitative analysis of 49 interviews + literature review of 50+ papers on virtual visit usability among
-        Black oncology patients. Co-author on peer-reviewed publication.
-      </p>
+      <div class="card">
+        <h3>Oncology Telehealth</h3>
+        <p>Worked on a qualitative study of virtual clinic visits among Black oncology patients. Co-author on a peer-reviewed publication.</p>
+      </div>
     </div>
   </div>
 </section>
 
+
 <!-- PROJECTS -->
-<section id="projects" class="section">
+<section id="projects" class="section fade section-split">
   <div class="container">
     <h1>Projects</h1>
 
     <div class="grid-2">
-
-      <div class="card">
-        <h3>Early Diabetes Risk Prediction</h3>
-        <p>Engineered features over 253k BRFSS records; Random Forest (SMOTE) hit 85% accuracy.</p>
-      </div>
-
-      <div class="card">
-        <h3>NBA Game Outcome Forecasting</h3>
-        <p>Built models predicting game stats (1,100+ games) with R² = 0.837, MAE < 1 for rebounds/points.</p>
-      </div>
-
-      <div class="card">
-        <h3>9-Ball Billiards Regression Analysis</h3>
-        <p>Modeled 150 games; identified mid-game 16% accuracy boost; no break advantage correlation.</p>
-      </div>
-
-      <div class="card">
-        <h3>Evolution of NBA Offense & Defense</h3>
-        <p>3PT efficiency predicted success 30% more strongly than defense across 40 years of data.</p>
-      </div>
-
-      <div class="card">
-        <h3>Crime & School Infrastructure and SAT Scores</h3>
-        <p>Violent crime correlated −0.45 with SAT performance; non-violent crime negligible.</p>
-      </div>
-
+      <div class="card"><h3>Early Diabetes Risk Prediction</h3><p>Engineered features for 253k BRFSS records. Random Forest with SMOTE reached 85 percent accuracy.</p></div>
+      <div class="card"><h3>NBA Game Outcome Forecasting</h3><p>Predicted stats across 1100+ games. Reached R2 of 0.837 and MAE below 1 for many metrics.</p></div>
+      <div class="card"><h3>Billiards Regression Study</h3><p>Analyzed 150 games of 9-ball to study accuracy patterns and game flow. Found a consistent mid-game jump in accuracy.</p></div>
+      <div class="card"><h3>Evolution of NBA Offense</h3><p>Studied 40 years of league data and found that three-point efficiency has become a stronger predictor of success than defense.</p></div>
+      <div class="card"><h3>Crime and SAT Scores</h3><p>Found that violent crime rates correlate around −0.45 with SAT performance, while non-violent crime has almost no effect.</p></div>
     </div>
   </div>
 </section>
 
+
 <!-- PUBLICATIONS -->
-<section id="publications" class="section">
+<section id="publications" class="section fade">
   <div class="container">
     <h1>Publications</h1>
 
     <div class="card">
       <h3>Telehealth Usability Among Black Oncology Patients</h3>
-      <p><em>Oncologist (2023)</em></p>
-      <p>
-        Examined virtual care communication barriers and usability patterns via qualitative interview analysis.
-      </p>
+      <p><em>Oncologist, 2023</em></p>
+      <p>Study of communication barriers and usability patterns in virtual oncology care.</p>
     </div>
 
     <div class="card">
       <h3>Perceptions of Virtual Visits in Oncology</h3>
-      <p><em>Journal of Clinical Oncology (2022)</em></p>
+      <p><em>Journal of Clinical Oncology, 2022</em></p>
     </div>
 
     <div class="card">
-      <h3>HERVH/LTR7 in Stem Cell Growth</h3>
-      <p><em>Abstract (2019)</em></p>
+      <h3>HERVH and Stem Cell Growth</h3>
+      <p><em>Research Abstract, 2019</em></p>
     </div>
-
   </div>
 </section>
 
+
 <!-- LEADERSHIP -->
-<section id="leadership" class="section">
+<section id="leadership" class="section fade section-split">
   <div class="container">
-    <h1>Leadership & Extracurriculars</h1>
+    <h1>Leadership and Extracurriculars</h1>
 
     <div class="grid-2">
-
       <div class="card">
-        <h3>Senior Co-President — Musical Empowerment</h3>
-        <p>
-          Oversaw 140+ volunteers across 13 national chapters, organizing community events
-          and leading logistics to provide free music lessons to under-resourced children.
-        </p>
+        <h3>Senior Co-President | Musical Empowerment</h3>
+        <p>Managed more than 140 volunteers across 13 chapters and organized community programming for free music education.</p>
       </div>
 
       <div class="card">
-        <h3>Music Director — UNC Samaa A Cappella</h3>
-        <p>
-          Led musical direction, arrangement design, and rehearsals for a fusion a cappella team,
-          blending South Asian and Western musical styles. Mentored younger members in composition and theory.
-        </p>
+        <h3>Music Director | UNC Samaa A Cappella</h3>
+        <p>Led rehearsals, arrangements, and musical direction for a fusion a cappella group that blends South Asian and Western styles.</p>
       </div>
 
       <div class="card">
-        <h3>Piano Performance & Teaching</h3>
-        <p>
-          Classically trained pianist with experience in performance, competition preparation,
-          and student-focused piano pedagogy. Teach students foundational technique, interpretation,
-          and expressive musicianship.
-        </p>
-        <p>
-          I also arrange mashups blending classical, Tamil, and Western contemporary styles.
-        </p>
+        <h3>Piano Teaching and Performance</h3>
+        <p>Teach classical technique, interpretation, and performance prep. Arrange pieces that mix classical, Tamil, and Western influences.</p>
         <a href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/"
-           class="btn secondary" target="_blank">
-          Visit Piano Website
-        </a>
+           class="btn secondary" target="_blank">Visit Piano Website</a>
       </div>
 
       <div class="card">
-        <h3>Founder — NC Youth for Peace</h3>
-        <p>
-          Built and led a cross-country ESL program serving 40+ Sri Lankan students, coordinating
-          a 6-person international teaching team to deliver weekly lessons for three years.
-        </p>
+        <h3>Founder | NC Youth for Peace</h3>
+        <p>Created an English-learning program for Sri Lankan students and ran it for three years with a six-person teaching team.</p>
       </div>
 
       <div class="card">
         <h3>United States Tamil Action Group</h3>
-        <p>
-          Advocated for Sri Lankan civil rights accountability by engaging with congressional offices and
-          participating in UN Human Rights Council meetings. Contributed to development of a graduate-level
-          human rights course.
-        </p>
+        <p>Worked on advocacy efforts related to civil rights in Sri Lanka and contributed to the development of a graduate-level human rights course.</p>
       </div>
-
     </div>
   </div>
 </section>
 
+
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section fade">
   <div class="container">
     <h1>Contact</h1>
 
@@ -318,22 +267,26 @@
       </p>
 
       <p>LinkedIn:
-        <a href="https://linkedin.com/in/praveen-puviindran-218998220" class="project-link" target="_blank">
-          linkedin.com/in/praveen-puviindran
-        </a>
+        <a href="https://linkedin.com/in/praveen-puviindran"
+           class="project-link"
+           target="_blank">linkedin.com/in/praveen-puviindran</a>
       </p>
 
       <p>GitHub:
-        <a href="https://github.com/praveenpuviindran" class="project-link" target="_blank">
-          github.com/praveenpuviindran
-        </a>
+        <a href="https://github.com/praveenpuviindran"
+           class="project-link"
+           target="_blank">github.com/praveenpuviindran</a>
       </p>
 
       <p>Personal Website:
-        <a href="https://praveenpuviindran.github.io" class="project-link" target="_blank">
-          praveenpuviindran.github.io
-        </a>
+        <a href="https://praveenpuviindran.github.io"
+           class="project-link"
+           target="_blank">praveenpuviindran.github.io</a>
       </p>
     </div>
   </div>
 </section>
+
+<script src="script.js"></script>
+</body>
+</html>
