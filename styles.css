@@ -287,9 +287,9 @@ body[data-theme="light"] .card {
 /* Grids */
 .grid-2,
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 /* ===========================================================
