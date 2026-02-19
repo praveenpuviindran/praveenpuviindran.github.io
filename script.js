@@ -1,58 +1,88 @@
-// Dark/Light Mode Toggle with Local Storage
-const toggle = document.querySelector('.toggle-wrapper');
 const body = document.body;
+const themeToggle = document.querySelector('.theme-toggle');
+const toggleLabel = document.querySelector('.toggle-label');
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
 
-function setTheme(theme) {
-  body.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
+function updateThemeUI(theme) {
+  const isLight = theme === 'light';
+  themeToggle.setAttribute('aria-pressed', String(isLight));
+  toggleLabel.textContent = isLight ? 'Light' : 'Dark';
 }
 
-toggle.addEventListener('click', () => {
+function applyTheme(theme, persist = true) {
+  body.setAttribute('data-theme', theme);
+  updateThemeUI(theme);
+  if (persist) {
+    localStorage.setItem('theme', theme);
+  }
+}
+
+(function initTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light' || savedTheme === 'dark') {
+    applyTheme(savedTheme, false);
+    return;
+  }
+
+  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  applyTheme(prefersLight ? 'light' : 'dark', false);
+})();
+
+themeToggle.addEventListener('click', () => {
   const current = body.getAttribute('data-theme');
-  const newTheme = current === 'light' ? 'dark' : 'light';
-  setTheme(newTheme);
+  applyTheme(current === 'light' ? 'dark' : 'light');
 });
 
-// Load saved theme
-const saved = localStorage.getItem('theme');
-if (saved) setTheme(saved);
+menuToggle.addEventListener('click', () => {
+  const navIsOpen = body.classList.toggle('nav-open');
+  menuToggle.setAttribute('aria-expanded', String(navIsOpen));
+});
 
-// Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
+nav.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', () => {
+    if (body.classList.contains('nav-open')) {
+      body.classList.remove('nav-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
   });
 });
 
-// Fade-in Animations
 const faders = document.querySelectorAll('.fade');
-
-const appear = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+const fadeObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
   });
-});
+}, { threshold: 0.15 });
 
-faders.forEach(el => appear.observe(el));
+faders.forEach((element) => fadeObserver.observe(element));
 
-// Highlight Nav on Scroll
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav a');
+const sections = document.querySelectorAll('main section[id]');
+const navLinks = document.querySelectorAll('.nav a[href^="#"]');
 
-const navObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const id = entry.target.id;
-      navLinks.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
+      const id = entry.target.getAttribute('id');
+      navLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
       });
     }
   });
 }, { threshold: 0.5 });
 
-sections.forEach(sec => navObserver.observe(sec));
+sections.forEach((section) => sectionObserver.observe(section));
+
+const profileImage = document.querySelector('[data-profile-image]');
+if (profileImage) {
+  profileImage.addEventListener('error', () => {
+    const container = profileImage.closest('.profile-photo');
+    if (container) {
+      container.classList.add('is-placeholder');
+    }
+    profileImage.remove();
+  });
+}

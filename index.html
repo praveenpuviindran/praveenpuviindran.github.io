@@ -1,404 +1,390 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praveen Puviindran</title>
+  <title>Praveen Puviindran | Data Scientist</title>
+  <meta name="description" content="Portfolio of Praveen Puviindran - machine learning, biomedical research, and sports analytics projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body data-theme="dark">
-
-<header class="site-header">
-  <div class="container header-content">
-    <div class="logo">
-      <div class="logo-mark">P</div>
-      <span class="logo-text">Praveen</span>
-    </div>
-
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#postgrad">Post-Graduate Work</a>
-      <a href="#undergrad">Undergraduate Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#leadership">Leadership</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="toggle-wrapper"><div class="toggle-circle"></div></div>
-  </div>
-</header>
-
-
-<!-- HOME -->
-<section id="home" class="section hero fade">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>Hi, I'm Praveen.</h1>
-      <p class="hero-subtitle">
-        I build machine learning systems, statistical models, and research pipelines for biomedical,
-        clinical, and sports analytics problems. My work focuses on high-dimensional data, clear
-        questions, and reproducible methods.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#about" class="btn primary">About Me</a>
-        <a href="#projects" class="btn secondary">Projects</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ABOUT -->
-<section id="about" class="section fade">
-  <div class="container">
-    <h1>About Me</h1>
-
-    <p class="section-intro">
-      I'm an aspiring data scientist who works across biomedical research, clinical modeling, and sports analytics.
-      I am passionate about using data to not only solve real-time problems, but also understand the past in a way to supplement our understanding of the present and future.
-    </p>
-
-    <div class="about-grid">
-      <div>
-        <h2>Background</h2>
-        <p>
-          I completed my B.S. in Statistics and Analytics at UNC Chapel Hill. I spent my undergrad working in various labs across
-          cancer pharmacology, virology, neurology, RNA-seq modeling, and medical imaging. Some of that work
-          involved wet-lab experiments like 20-day chemotherapy dosing studies to optimize dosing schedules and regimens. Other parts focused on
-          computational modeling like tumor subtype classification for Kaposi Sarcoma and directional connectivity analysis from fMRI scans.
-        </p>
-
-        <p>
-          I currently work at the Framingham Heart Study as a postbaccalaureate research fellow with the National Institutes of Health. My work focuses on
-          large-scale proteomics. My current project is analyzing data on nearly 3000 proteins measured across 25,000 participants.
-          My goal is to identify biomarkers for heavy menstrual bleeding and build risk-score tools that shorten
-          the time it takes for patients to get diagnosed.
-        </p>
-
-        <p>
-          I'm also a lifelong pianist and piano teacher. I grew up playing classical music and perform regularly.
-          I also teach privately, focusing on technique and interpretation for students to build an emotional bond with the piano. Along with performing and teaching,
-          I also arrange and write acapella and piano pieces that mix classical, South Asian, and Western styles. You can see my music work here:
-          <a href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/"
-             class="project-link" target="_blank">Piano Website</a>.
-        </p>
-      </div>
-
-      <div class="card">
-<h3>Technical Skills</h3>
-<ul>
-  <li><strong>Python:</strong> pandas, NumPy, scikit-learn, PyTorch</li>
-  <li><strong>R:</strong> tidyverse, dplyr, ggplot2, caret, Bioconductor</li>
-  <li><strong>Data:</strong> SQL, ETL pipelines, data cleaning, feature engineering</li>
-  <li><strong>Modeling:</strong> machine learning, statistical modeling, deep learning</li>
-  <li><strong>Workflow:</strong> reproducible analysis, version control, documentation</li>
-</ul>
-      </div>
-    </div>
-
-    <br>
-    <a href="#projects" class="btn primary">Explore My Work</a>
-  </div>
-</section>
-
-
-<!-- POSTGRAD -->
-<section id="postgrad" class="section fade section-split">
-  <div class="container">
-    <h1>Post-Graduate Work</h1>
-
-    <div class="card">
-      <h3>NIH | Postbaccalaureate Research Fellow</h3>
-      <p>
-        At the Framingham Heart Study I work on proteomic modeling related to heavy menstrual bleeding.
-        The goal is to identify biomarkers and build prediction tools that can support earlier diagnosis.
-      </p>
-      <ul>
-        <li>Building ETL pipelines for ~3000 proteins across 25,000 participants</li>
-        <li>Using LASSO, correlation networks, and pathway methods for feature selection</li>
-        <li>Developing early detection risk-score models utilizing a novel Protein Risk Score</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>NBA Synergy Engine</h3>
-      <p>
-        A lineup-chemistry modeling tool that uses tracking data to predict on-court synergy.
-        The project includes a DeepSet model, shot-pattern clustering, and an AI GM that selects
-        the best fifth player for any four-player core.
-      </p>
-      <ul>
-        <li>170,000+ possessions processed with Python and SQL</li>
-        <li>PCA and Gaussian Mixture clustering for archetype modeling</li>
-        <li>DeepSet architecture built in PyTorch</li>
-      </ul>
-      <a href="https://nba-synergy-engine.streamlit.app/" target="_blank" class="btn secondary">Visit Live Demo</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- UNDERGRAD -->
-<section id="undergrad" class="section fade">
-  <div class="container">
-    <h1>Undergraduate Work</h1>
-
-    <div class="card">
-      <h3>Kaposi Sarcoma RNA-seq Classifier</h3>
-      <p>
-        Built PCA and LASSO/SVM/RF/MLP models for HIV-positive tumor subtyping. Achieved ROC-AUC of 0.95.
-        Identified a six-gene panel using RFE and SHAP.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Cancer Pharmacology</h3>
-      <p>
-        Ran 20-day chemotherapy dosing studies in lung cancer cell lines and modeled viability curves
-        using R and Mathematica.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Neurology</h3>
-      <p>
-        Used SPM to analyze directional connectivity among hippocampal regions in epilepsy using
-        dynamic causal modeling.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Oncology Microbiome</h3>
-      <p>
-        Analyzed 16S datasets using QIIME2 to study radiation-induced microbiome changes. Ran
-        PERMANOVA and PCoA analyses.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Oncology Telehealth</h3>
-      <p>
-        Worked on a qualitative study of virtual oncology visits among Black adults. Co-author on a
-        peer-reviewed publication.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects" class="section fade">
-  <div class="container">
-    <h1>Projects</h1>
-
-    <div class="card">
-      <h3>Early Diabetes Risk Prediction</h3>
-      <p>
-        Engineered features for 253k BRFSS records. Random Forest with SMOTE reached 85 percent accuracy.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>NBA Game Outcome Forecasting</h3>
-      <p>
-        Predicted game statistics across 1100+ NBA games. Achieved R² of 0.837 and MAE below 1 for
-        several metrics.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Billiards Regression Study</h3>
-      <p>
-        Analyzed 150 games of 9-ball to study accuracy patterns and game flow. Found a consistent
-        mid-game increase in shot accuracy.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Evolution of NBA Offense</h3>
-      <p>
-        Studied 40 years of league trends and found that three-point efficiency has become a stronger
-        predictor of success than defensive metrics.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Crime and SAT Scores</h3>
-      <p>
-        Found that violent crime rates correlate around −0.45 with SAT performance, while non-violent
-        crime shows little effect.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- PUBLICATIONS -->
-<section id="publications" class="section fade">
-  <div class="container">
-    <h1>Publications</h1>
-
-    <!-- Publication 1 -->
-    <div class="card">
-      <h3>
-        The Perceived Usability of Virtual Visits Among Black Adults Receiving Oncology Care: 
-        A Qualitative Analysis
-      </h3>
-      <p><em>The Oncologist, 2023</em></p>
-      <p>
-        Tam S, Neslund-Dudas C, Barrett AM, Barrow LCJ, Fridman I, Kinlaw AC, 
-        <strong>Puviindran P</strong>, Royce TJ, Smith AB, Stein JN, Wood WA, Lafata JE.
-      </p>
-      <a 
-        href="https://doi.org/10.1093/oncolo/oyad260" 
-        class="project-link" 
-        target="_blank">
-        View Publication
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">PP</span>
+        <span class="brand-text">Praveen Puviindran</span>
       </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#postgrad">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Toggle dark and light theme" aria-pressed="false">
+        <span class="toggle-track">
+          <span class="toggle-thumb"></span>
+        </span>
+        <span class="toggle-label">Dark</span>
+      </button>
     </div>
+  </header>
 
-    <!-- Publication 2 -->
-    <div class="card">
-      <h3>
-        A Qualitative Study of Black Adults’ Perceptions of Virtual Visits in Oncology Care
-      </h3>
-      <p><em>Journal of Clinical Oncology, 2022</em></p>
-      <p>
-        Lafata JE, Tam S, Neslund-Dudas C, Barrett AM, Fridman I, Barrow LCJ, Kinlaw AC, 
-        Middlebrooke W, <strong>Puviindran P</strong>, Royce TJ, Smith AB, Stein JN, Wood WA.
-      </p>
-      <a 
-        href="https://ascopubs.org/doi/10.1200/JCO.2022.40.28_suppl.174" 
-        class="project-link" 
-        target="_blank">
-        View Publication
-      </a>
-    </div>
+  <main>
+    <section id="home" class="hero section fade">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Data Science + Research</p>
+          <h1>I build practical ML systems for biomedical and sports analytics.</h1>
+          <p class="hero-subtitle">
+            I am Praveen, a statistics and analytics graduate building interpretable models,
+            reliable pipelines, and research workflows that turn complex datasets into clear decisions.
+          </p>
 
-    <!-- Publication 3 -->
-    <div class="card">
-      <h3>Function of HERVH in the Regulation of hESC Growth</h3>
-      <p><em>Unpublished Abstract, 2019</em></p>
-      <p>
-        <strong>Puviindran P</strong>, Sun T, Diao Y. Unpublished abstract describing early work on the role
-        of HERVH in human embryonic stem cell growth and maintenance.
-      </p>
-      <!-- no link because abstract is unpublished -->
-    </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
 
-  </div>
-</section>
+          <ul class="highlights" aria-label="Highlights">
+            <li>NIH postbaccalaureate fellow at Framingham Heart Study</li>
+            <li>Built ML pipelines on large-scale proteomics data</li>
+            <li>Active in music leadership, performance, and teaching</li>
+          </ul>
+        </div>
 
+        <aside class="hero-panel card fade" aria-label="Profile and quick facts">
+          <div class="profile-photo" aria-label="Profile photo container">
+            <!-- Add your photo file here: assets/images/praveen-headshot.jpg -->
+            <img
+              data-profile-image
+              src="assets/images/praveen-headshot.jpg"
+              alt="Portrait of Praveen Puviindran"
+            >
+            <span class="photo-fallback" aria-hidden="true">PP</span>
+          </div>
 
-<!-- LEADERSHIP -->
-<section id="leadership" class="section fade">
-  <div class="container">
-    <h1>Leadership and Extracurriculars</h1>
+          <div class="quick-facts">
+            <p><strong>Current Focus:</strong> Proteomic biomarker discovery and risk modeling.</p>
+            <p><strong>Education:</strong> B.S. Statistics and Analytics, UNC Chapel Hill.</p>
+            <p><strong>Interests:</strong> Clinical ML, reproducible research, piano performance.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Senior Co-President | Musical Empowerment</h3>
-      <p>
-        Managed more than 140 volunteers across 13 chapters and organized community programming for
-        free music education.
-      </p>
-    </div>
+    <section id="about" class="section fade">
+      <div class="container">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Personal, technical, and cross-disciplinary.</h2>
+        <div class="about-grid">
+          <article class="card">
+            <h3>Background</h3>
+            <p>
+              I completed my B.S. in Statistics and Analytics at UNC Chapel Hill, where I worked across
+              cancer pharmacology, virology, neurology, RNA-seq modeling, and medical imaging.
+              My experience spans wet-lab experiments and computational modeling, which helps me connect
+              biological context with statistical rigor.
+            </p>
+            <p>
+              At the Framingham Heart Study, I support proteomic analyses on roughly 25,000 participants
+              with nearly 3,000 measured proteins. My goal is to identify biomarkers for heavy menstrual
+              bleeding and contribute to earlier, data-driven diagnosis pathways.
+            </p>
+          </article>
 
-    <div class="card">
-      <h3>Music Director | UNC Samaa A Cappella</h3>
-      <p>
-        Led rehearsals, arrangements, and musical direction for a fusion a cappella group blending
-        South Asian and Western styles.
-      </p>
-    </div>
+          <article class="card">
+            <h3>How I Work</h3>
+            <ul class="list-clean">
+              <li><strong>Modeling:</strong> Build interpretable and performance-tested ML workflows.</li>
+              <li><strong>Pipelines:</strong> Design ETL and feature engineering processes that are reproducible.</li>
+              <li><strong>Validation:</strong> Prioritize explainability, calibration, and robustness checks.</li>
+              <li><strong>Collaboration:</strong> Translate technical findings into actionable research decisions.</li>
+            </ul>
+            <h3>Outside Research</h3>
+            <p>
+              I am a lifelong pianist and teacher, and I arrange fusion a cappella and piano pieces that blend
+              classical, South Asian, and Western styles.
+              <a class="inline-link" href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/" target="_blank" rel="noreferrer">View music work</a>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Piano Teaching and Performance</h3>
-      <p>
-        Teach classical technique, interpretation, and performance preparation. Arrange pieces mixing
-        classical, Tamil, and Western influences.
-      </p>
-      <a href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/"
-         class="btn secondary" target="_blank">Visit Piano Website</a>
-    </div>
+    <section id="projects" class="section fade">
+      <div class="container">
+        <p class="eyebrow">Featured Projects</p>
+        <h2 class="section-title">Clear problem framing, method selection, and measurable outcomes.</h2>
 
-    <div class="card">
-      <h3>Founder | NC Youth for Peace</h3>
-      <p>
-        Created and ran an English-learning program for Sri Lankan students for three years with a
-        six-person teaching team.
-      </p>
-    </div>
+        <div class="project-grid">
+          <article class="card project-card">
+            <h3>Early Diabetes Risk Prediction</h3>
+            <p class="project-summary">
+              Built an early screening model to flag high-risk individuals using population-level health survey data.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Class imbalance and noisy behavioral/clinical predictors in BRFSS data.</li>
+              <li><strong>Approach:</strong> Feature engineering plus SMOTE with Random Forest on 253k records.</li>
+              <li><strong>Outcome:</strong> Reached approximately 85% accuracy for early risk stratification.</li>
+            </ul>
+          </article>
 
-    <div class="card">
-      <h3>United States Tamil Action Group</h3>
-      <p>
-        Worked on advocacy efforts related to civil rights in Sri Lanka and contributed to material
-        used in a graduate-level human rights course.
-      </p>
-    </div>
+          <article class="card project-card">
+            <h3>NBA Game Outcome Forecasting</h3>
+            <p class="project-summary">
+              Developed forecasting models for game-level performance metrics across more than 1,100 NBA games.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Multi-output prediction where team-level dynamics shift week to week.</li>
+              <li><strong>Approach:</strong> Time-aware feature construction and regression model comparison.</li>
+              <li><strong>Outcome:</strong> Achieved R squared near 0.84 with MAE below 1 on key targets.</li>
+            </ul>
+          </article>
 
-  </div>
-</section>
+          <article class="card project-card">
+            <h3>Billiards Regression Study</h3>
+            <p class="project-summary">
+              Investigated in-game performance drift and shot accuracy patterns in competitive 9-ball play.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Quantify how player accuracy changes across match phases.</li>
+              <li><strong>Approach:</strong> Regression analysis on 150 games with segment-wise trend modeling.</li>
+              <li><strong>Outcome:</strong> Identified a repeatable mid-game increase in shot precision.</li>
+            </ul>
+          </article>
 
-<!-- RESUME -->
-<section id="resume" class="section">
-  <div class="container">
-    <h1>Resume</h1>
+          <article class="card project-card">
+            <h3>Evolution of NBA Offense</h3>
+            <p class="project-summary">
+              Longitudinal analysis of four decades of league trends to explain modern offensive strategy.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Determine which metrics became strongest predictors of team success.</li>
+              <li><strong>Approach:</strong> Era-adjusted comparisons and trend decomposition across seasons.</li>
+              <li><strong>Outcome:</strong> Showed three-point efficiency overtook defense-only metrics in impact.</li>
+            </ul>
+          </article>
 
-    <div class="card">
-      <p>You can view or download my current resume below.</p>
+          <article class="card project-card">
+            <h3>Crime and SAT Score Analysis</h3>
+            <p class="project-summary">
+              Explored links between state-level crime patterns and education performance outcomes.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Separate meaningful social signal from aggregate-level noise.</li>
+              <li><strong>Approach:</strong> Correlation and regression diagnostics across crime categories.</li>
+              <li><strong>Outcome:</strong> Found moderate negative correlation with violent crime, weaker effect otherwise.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <a 
-        href="Praveen_Puviindran_Resume.pdf" 
-        target="_blank" 
-        class="btn primary"
-      >
-        View Resume (PDF)
-      </a>
-    </div>
-  </div>
-</section>
+    <section id="postgrad" class="section fade section-accent">
+      <div class="container">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section-title">Post-graduate and advanced applied work.</h2>
 
-<!-- CONTACT -->
-<section id="contact" class="section fade">
-  <div class="container">
-    <h1>Contact</h1>
+        <div class="experience-grid">
+          <article class="card">
+            <h3>NIH | Postbaccalaureate Research Fellow</h3>
+            <p>
+              At the Framingham Heart Study, I develop proteomic workflows focused on biomarker discovery
+              for heavy menstrual bleeding and earlier diagnosis support.
+            </p>
+            <ul class="list-clean">
+              <li>Built ETL systems for approximately 3,000 proteins across 25,000 participants.</li>
+              <li>Applied LASSO, network methods, and pathway analyses for feature prioritization.</li>
+              <li>Developed risk scoring concepts for clinically actionable screening support.</li>
+            </ul>
+          </article>
 
-    <div class="card">
-      <p>Email:
-        <a href="mailto:praveen.puviindran@gmail.com" class="project-link">
-          praveen.puviindran@gmail.com
-        </a>
-      </p>
+          <article class="card">
+            <h3>NBA Synergy Engine</h3>
+            <p>
+              Created a lineup chemistry modeling platform that predicts on-court fit and suggests
+              high-value five-man combinations.
+            </p>
+            <ul class="list-clean">
+              <li>Processed 170,000+ possessions with Python and SQL feature pipelines.</li>
+              <li>Used PCA plus Gaussian Mixture clustering for player archetype discovery.</li>
+              <li>Implemented DeepSet models in PyTorch for lineup-level representation learning.</li>
+            </ul>
+            <a href="https://nba-synergy-engine.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <p>LinkedIn:
-        <a href="https://linkedin.com/in/praveen-puviindran"
-           class="project-link"
-           target="_blank">linkedin.com/in/praveen-puviindran</a>
-      </p>
+    <section id="undergrad" class="section fade">
+      <div class="container">
+        <p class="eyebrow">Undergraduate Research</p>
+        <h2 class="section-title">Foundational projects across translational and computational science.</h2>
+        <div class="experience-grid">
+          <article class="card">
+            <h3>Kaposi Sarcoma RNA-seq Classifier</h3>
+            <p>
+              Built PCA + LASSO/SVM/RF/MLP pipelines for HIV-positive tumor subtyping,
+              reaching ROC-AUC of 0.95 and identifying a six-gene panel with RFE and SHAP.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Cancer Pharmacology</h3>
+            <p>
+              Ran 20-day chemotherapy dosing studies in lung cancer cell lines and modeled viability
+              curves with R and Mathematica to evaluate schedule-response relationships.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Neurology</h3>
+            <p>
+              Used SPM-based dynamic causal modeling to analyze directional hippocampal connectivity
+              patterns in epilepsy fMRI studies.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Oncology Microbiome</h3>
+            <p>
+              Analyzed 16S datasets in QIIME2 and performed PERMANOVA/PCoA to study
+              radiation-associated microbiome composition changes.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Oncology Telehealth</h3>
+            <p>
+              Contributed to qualitative oncology telehealth research among Black adults,
+              supporting analysis and publication development.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <p>GitHub:
-        <a href="https://github.com/praveenpuviindran"
-           class="project-link"
-           target="_blank">github.com/praveenpuviindran</a>
-      </p>
+    <section id="publications" class="section fade">
+      <div class="container">
+        <p class="eyebrow">Publications</p>
+        <h2 class="section-title">Peer-reviewed and scholarly contributions.</h2>
 
-      <p>Personal Website:
-        <a href="https://praveenpuviindran.github.io"
-           class="project-link"
-           target="_blank">praveenpuviindran.github.io</a>
-      </p>
-    </div>
-  </div>
-</section>
+        <div class="experience-grid">
+          <article class="card">
+            <h3>The Perceived Usability of Virtual Visits Among Black Adults Receiving Oncology Care</h3>
+            <p><em>The Oncologist, 2023</em></p>
+            <p>
+              Tam S, Neslund-Dudas C, Barrett AM, Barrow LCJ, Fridman I, Kinlaw AC,
+              <strong>Puviindran P</strong>, Royce TJ, Smith AB, Stein JN, Wood WA, Lafata JE.
+            </p>
+            <a class="inline-link" href="https://doi.org/10.1093/oncolo/oyad260" target="_blank" rel="noreferrer">View publication</a>
+          </article>
 
-<script src="script.js"></script>
+          <article class="card">
+            <h3>A Qualitative Study of Black Adults' Perceptions of Virtual Visits in Oncology Care</h3>
+            <p><em>Journal of Clinical Oncology, 2022</em></p>
+            <p>
+              Lafata JE, Tam S, Neslund-Dudas C, Barrett AM, Fridman I, Barrow LCJ, Kinlaw AC,
+              Middlebrooke W, <strong>Puviindran P</strong>, Royce TJ, Smith AB, Stein JN, Wood WA.
+            </p>
+            <a class="inline-link" href="https://ascopubs.org/doi/10.1200/JCO.2022.40.28_suppl.174" target="_blank" rel="noreferrer">View publication</a>
+          </article>
+
+          <article class="card">
+            <h3>Function of HERVH in the Regulation of hESC Growth</h3>
+            <p><em>Unpublished Abstract, 2019</em></p>
+            <p>
+              <strong>Puviindran P</strong>, Sun T, Diao Y. Early investigation into how HERVH influences
+              human embryonic stem cell growth and maintenance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership" class="section fade">
+      <div class="container">
+        <p class="eyebrow">Leadership + Music</p>
+        <h2 class="section-title">Community impact beyond technical work.</h2>
+
+        <div class="experience-grid">
+          <article class="card">
+            <h3>Senior Co-President | Musical Empowerment</h3>
+            <p>
+              Managed 140+ volunteers across 13 chapters and led community programming
+              for accessible music education.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Music Director | UNC Samaa A Cappella</h3>
+            <p>
+              Led rehearsals, arrangement direction, and performance strategy for a
+              South Asian and Western fusion ensemble.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Piano Teaching + Performance</h3>
+            <p>
+              Teach technique and interpretation while arranging cross-genre pieces
+              spanning classical, Tamil, and contemporary styles.
+            </p>
+            <a href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/" class="inline-link" target="_blank" rel="noreferrer">Visit piano site</a>
+          </article>
+
+          <article class="card">
+            <h3>Founder | NC Youth for Peace</h3>
+            <p>
+              Created and led a three-year English learning program for students in Sri Lanka
+              with a six-person teaching team.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>United States Tamil Action Group</h3>
+            <p>
+              Supported advocacy work on civil rights in Sri Lanka and contributed
+              educational materials for graduate-level human rights coursework.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section fade">
+      <div class="container">
+        <p class="eyebrow">Resume</p>
+        <h2 class="section-title">Download the latest version.</h2>
+        <article class="card resume-card">
+          <p>Access the current PDF resume for detailed experience, projects, and publications.</p>
+          <a href="Praveen_Puviindran_Resume.pdf" target="_blank" class="btn primary" rel="noreferrer">View Resume (PDF)</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section fade">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Open to research and data science collaborations.</h2>
+        <article class="card contact-card">
+          <p><strong>Email:</strong> <a class="inline-link" href="mailto:praveen.puviindran@gmail.com">praveen.puviindran@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a class="inline-link" href="https://linkedin.com/in/praveen-puviindran" target="_blank" rel="noreferrer">linkedin.com/in/praveen-puviindran</a></p>
+          <p><strong>GitHub:</strong> <a class="inline-link" href="https://github.com/praveenpuviindran" target="_blank" rel="noreferrer">github.com/praveenpuviindran</a></p>
+          <p><strong>Portfolio:</strong> <a class="inline-link" href="https://praveenpuviindran.github.io" target="_blank" rel="noreferrer">praveenpuviindran.github.io</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
