@@ -25,9 +25,11 @@
       <nav id="site-nav" class="nav" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#postgrad">Post-Graduate Work</a>
+        <a href="#undergrad">Undergraduate Work</a>
         <a href="#projects">Projects</a>
-        <a href="#postgrad">Experience</a>
         <a href="#publications">Publications</a>
+        <a href="#leadership">Community Impact</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -45,22 +47,22 @@
     <section id="home" class="hero section fade">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Data Science + Research</p>
-          <h1>I build practical ML systems for biomedical and sports analytics.</h1>
+          <p class="eyebrow">Data Science Across Domains</p>
+          <h1>Hey! I'm Praveen.</h1>
           <p class="hero-subtitle">
-            I am Praveen, a statistics and analytics graduate building interpretable models,
-            reliable pipelines, and research workflows that turn complex datasets into clear decisions.
+            I build machine learning and statistical workflows across biomedical research, sports analytics,
+            and high-dimensional real-world datasets. 
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn primary" href="#postgrad">View Current Work</a>
             <a class="btn ghost" href="#contact">Contact Me</a>
           </div>
 
           <ul class="highlights" aria-label="Highlights">
-            <li>NIH postbaccalaureate fellow at Framingham Heart Study</li>
-            <li>Built ML pipelines on large-scale proteomics data</li>
-            <li>Active in music leadership, performance, and teaching</li>
+            <li>NIH postbaccalaureate fellow building proteomics and platelet modeling pipelines at Framingham</li>
+            <li>End-to-end ML experience across RNA-seq, clinical, public health, and sports datasets</li>
+            <li>Focused on reliable data workflows, interpretable modeling, and decision-ready communication</li>
           </ul>
         </div>
 
@@ -76,9 +78,9 @@
           </div>
 
           <div class="quick-facts">
-            <p><strong>Current Focus:</strong> Proteomic biomarker discovery and risk modeling.</p>
+            <p><strong>Current Role:</strong> Postbaccalaureate Research Fellow, Framingham Heart Study.</p>
             <p><strong>Education:</strong> B.S. Statistics and Analytics, UNC Chapel Hill.</p>
-            <p><strong>Interests:</strong> Clinical ML, reproducible research, piano performance.</p>
+            <p><strong>Focus Areas:</strong> Biomedical research, sports analytics, and applied data science.</p>
           </div>
         </aside>
       </div>
@@ -87,106 +89,37 @@
     <section id="about" class="section fade">
       <div class="container">
         <p class="eyebrow">About</p>
-        <h2 class="section-title">Personal, technical, and cross-disciplinary.</h2>
+        <h2 class="section-title">Personal, technical, and built for cross-domain impact.</h2>
         <div class="about-grid">
           <article class="card">
             <h3>Background</h3>
             <p>
-              I completed my B.S. in Statistics and Analytics at UNC Chapel Hill, where I worked across
-              cancer pharmacology, virology, neurology, RNA-seq modeling, and medical imaging.
-              My experience spans wet-lab experiments and computational modeling, which helps me connect
-              biological context with statistical rigor.
+              I completed my B.S. in Statistics and Analytics at UNC Chapel Hill and trained across
+              computational pharmacology & oncology, applied analytics, and theoretical statistics environments.
+              That combination of wet-lab and quantitative work shaped how I approach analysis: context first,
+              then modeling.
             </p>
             <p>
-              At the Framingham Heart Study, I support proteomic analyses on roughly 25,000 participants
-              with nearly 3,000 measured proteins. My goal is to identify biomarkers for heavy menstrual
-              bleeding and contribute to earlier, data-driven diagnosis pathways.
+              I am most interested in data science roles where rigorous modeling leads to better decisions,
+              whether the setting is biomedical research, sports strategy, or other complex systems.
             </p>
           </article>
 
           <article class="card">
-            <h3>How I Work</h3>
+            <h3>My Data Science Workflow</h3>
             <ul class="list-clean">
-              <li><strong>Modeling:</strong> Build interpretable and performance-tested ML workflows.</li>
-              <li><strong>Pipelines:</strong> Design ETL and feature engineering processes that are reproducible.</li>
-              <li><strong>Validation:</strong> Prioritize explainability, calibration, and robustness checks.</li>
-              <li><strong>Collaboration:</strong> Translate technical findings into actionable research decisions.</li>
+              <li><strong>Frame the decision:</strong> Define what needs to be predicted, ranked, or explained and why it matters.</li>
+              <li><strong>Understand the data:</strong> Audit structure, missingness, and quality before building anything.</li>
+              <li><strong>Prepare and engineer:</strong> Clean, merge, transform, and create features that capture real signal.</li>
+              <li><strong>Model intentionally:</strong> Compare methods based on fit, generalization, and interpretability.</li>
+              <li><strong>Evaluate rigorously:</strong> Use appropriate metrics, stress tests, and error analysis on unseen data.</li>
+              <li><strong>Communicate and iterate:</strong> Deliver clear results, then refine as new data and goals evolve.</li>
             </ul>
-            <h3>Outside Research</h3>
+            <h3>Outside Interests</h3>
             <p>
-              I am a lifelong pianist and teacher, and I arrange fusion a cappella and piano pieces that blend
-              classical, South Asian, and Western styles.
-              <a class="inline-link" href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/" target="_blank" rel="noreferrer">View music work</a>.
+              Outside technical work, I am involved in piano performance, piano pedagogy, and a cappella arrangement.
+              I also enjoy billiards and basketball, which often inspire my sports analytics projects.
             </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section fade">
-      <div class="container">
-        <p class="eyebrow">Featured Projects</p>
-        <h2 class="section-title">Clear problem framing, method selection, and measurable outcomes.</h2>
-
-        <div class="project-grid">
-          <article class="card project-card">
-            <h3>Early Diabetes Risk Prediction</h3>
-            <p class="project-summary">
-              Built an early screening model to flag high-risk individuals using population-level health survey data.
-            </p>
-            <ul class="project-points">
-              <li><strong>Problem:</strong> Class imbalance and noisy behavioral/clinical predictors in BRFSS data.</li>
-              <li><strong>Approach:</strong> Feature engineering plus SMOTE with Random Forest on 253k records.</li>
-              <li><strong>Outcome:</strong> Reached approximately 85% accuracy for early risk stratification.</li>
-            </ul>
-          </article>
-
-          <article class="card project-card">
-            <h3>NBA Game Outcome Forecasting</h3>
-            <p class="project-summary">
-              Developed forecasting models for game-level performance metrics across more than 1,100 NBA games.
-            </p>
-            <ul class="project-points">
-              <li><strong>Problem:</strong> Multi-output prediction where team-level dynamics shift week to week.</li>
-              <li><strong>Approach:</strong> Time-aware feature construction and regression model comparison.</li>
-              <li><strong>Outcome:</strong> Achieved R squared near 0.84 with MAE below 1 on key targets.</li>
-            </ul>
-          </article>
-
-          <article class="card project-card">
-            <h3>Billiards Regression Study</h3>
-            <p class="project-summary">
-              Investigated in-game performance drift and shot accuracy patterns in competitive 9-ball play.
-            </p>
-            <ul class="project-points">
-              <li><strong>Problem:</strong> Quantify how player accuracy changes across match phases.</li>
-              <li><strong>Approach:</strong> Regression analysis on 150 games with segment-wise trend modeling.</li>
-              <li><strong>Outcome:</strong> Identified a repeatable mid-game increase in shot precision.</li>
-            </ul>
-          </article>
-
-          <article class="card project-card">
-            <h3>Evolution of NBA Offense</h3>
-            <p class="project-summary">
-              Longitudinal analysis of four decades of league trends to explain modern offensive strategy.
-            </p>
-            <ul class="project-points">
-              <li><strong>Problem:</strong> Determine which metrics became strongest predictors of team success.</li>
-              <li><strong>Approach:</strong> Era-adjusted comparisons and trend decomposition across seasons.</li>
-              <li><strong>Outcome:</strong> Showed three-point efficiency overtook defense-only metrics in impact.</li>
-            </ul>
-          </article>
-
-          <article class="card project-card">
-            <h3>Crime and SAT Score Analysis</h3>
-            <p class="project-summary">
-              Explored links between state-level crime patterns and education performance outcomes.
-            </p>
-            <ul class="project-points">
-              <li><strong>Problem:</strong> Separate meaningful social signal from aggregate-level noise.</li>
-              <li><strong>Approach:</strong> Correlation and regression diagnostics across crime categories.</li>
-              <li><strong>Outcome:</strong> Found moderate negative correlation with violent crime, weaker effect otherwise.</li>
-            </ul>
           </article>
         </div>
       </div>
@@ -194,32 +127,44 @@
 
     <section id="postgrad" class="section fade section-accent">
       <div class="container">
-        <p class="eyebrow">Experience</p>
-        <h2 class="section-title">Post-graduate and advanced applied work.</h2>
+        <p class="eyebrow">Post-Graduate Work</p>
+        <h2 class="section-title">Current projects in biomedical research and sports analytics.</h2>
 
-        <div class="experience-grid">
+        <div class="experience-grid balanced-grid">
           <article class="card">
-            <h3>NIH | Postbaccalaureate Research Fellow</h3>
+            <h3>Framingham Heart Study: Proteomic Biomarker Discovery</h3>
             <p>
-              At the Framingham Heart Study, I develop proteomic workflows focused on biomarker discovery
-              for heavy menstrual bleeding and earlier diagnosis support.
+              Leading analysis pipelines for heavy menstrual bleeding biomarker discovery using large-scale
+              proteomic data from the Framingham cohort.
             </p>
             <ul class="list-clean">
-              <li>Built ETL systems for approximately 3,000 proteins across 25,000 participants.</li>
-              <li>Applied LASSO, network methods, and pathway analyses for feature prioritization.</li>
-              <li>Developed risk scoring concepts for clinically actionable screening support.</li>
+              <li>Working with approximately 3,000 proteins across roughly 25,000 participant records.</li>
+              <li>Using feature selection and network-style analyses to identify candidate biomarker signatures.</li>
+              <li>Building protein-informed risk score concepts aimed at earlier clinical detection.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Framingham Heart Study: Platelet Extremes Modeling</h3>
+            <p>
+              Building a machine learning framework to differentiate platelet extreme phenotypes in patients,
+              with emphasis on robust feature engineering and interpretable model outputs.
+            </p>
+            <ul class="list-clean">
+              <li>Defining cohort segments and phenotype boundaries for low and high platelet states in >3,000 patients.</li>
+              <li>Testing classification workflows that integrate clinical covariates and omics-style features.</li>
+              <li>Establishing a foundation for expanded analysis as project scope and data mature.</li>
             </ul>
           </article>
 
           <article class="card">
             <h3>NBA Synergy Engine</h3>
             <p>
-              Created a lineup chemistry modeling platform that predicts on-court fit and suggests
-              high-value five-man combinations.
+              Built a lineup chemistry platform that predicts fit and recommends high-value five-player units.
             </p>
             <ul class="list-clean">
               <li>Processed 170,000+ possessions with Python and SQL feature pipelines.</li>
-              <li>Used PCA plus Gaussian Mixture clustering for player archetype discovery.</li>
+              <li>Used PCA and Gaussian Mixture clustering for player archetype identification.</li>
               <li>Implemented DeepSet models in PyTorch for lineup-level representation learning.</li>
             </ul>
             <a href="https://nba-synergy-engine.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
@@ -231,42 +176,137 @@
     <section id="undergrad" class="section fade">
       <div class="container">
         <p class="eyebrow">Undergraduate Research</p>
-        <h2 class="section-title">Foundational projects across translational and computational science.</h2>
-        <div class="experience-grid">
+        <h2 class="section-title">Expanded lab and statistical research experience from UNC, MD Anderson, and Duke.</h2>
+
+        <div class="experience-grid balanced-grid">
           <article class="card">
-            <h3>Kaposi Sarcoma RNA-seq Classifier</h3>
+            <h3>Statistical Consultant, UNC Data Science and Society</h3>
             <p>
-              Built PCA + LASSO/SVM/RF/MLP pipelines for HIV-positive tumor subtyping,
+              Built a Kaposi Sarcoma subtype classifier using viral RNA-seq data from HIV-positive patient tumors.
+              Applied PCA clustering (silhouette score 0.77), then trained LASSO, SVM, RF, and MLP models,
               reaching ROC-AUC of 0.95 and identifying a six-gene panel with RFE and SHAP.
             </p>
           </article>
+
           <article class="card">
-            <h3>Cancer Pharmacology</h3>
+            <h3>Research Assistant, UNC Pharmacology</h3>
             <p>
-              Ran 20-day chemotherapy dosing studies in lung cancer cell lines and modeled viability
-              curves with R and Mathematica to evaluate schedule-response relationships.
+              Led 20-day cell culture studies in lung cancer cell lines (NCI-H2228 and HCC827) to evaluate
+              chemotherapy dosing schedules. Analyzed viability outcomes in R and Mathematica and found that
+              cyclical Docetaxel/Paclitaxel regimens maintained efficacy while reducing toxicity burden.
             </p>
           </article>
+
           <article class="card">
-            <h3>Neurology</h3>
+            <h3>Research Assistant, UNC Neurology</h3>
             <p>
-              Used SPM-based dynamic causal modeling to analyze directional hippocampal connectivity
-              patterns in epilepsy fMRI studies.
+              Conducted directional connectivity analysis of hippocampal regions in epilepsy using Dynamic Causal
+              Modeling and resting-state fMRI. Preprocessed imaging data in SPM and compared connectivity outputs
+              in MATLAB to characterize seizure propagation pathways.
             </p>
           </article>
+
           <article class="card">
-            <h3>Oncology Microbiome</h3>
+            <h3>CPRIT/CURE Summer Research Intern, MD Anderson</h3>
             <p>
-              Analyzed 16S datasets in QIIME2 and performed PERMANOVA/PCoA to study
-              radiation-associated microbiome composition changes.
+              Studied skin microbiome diversity in patients receiving radiation therapy using 16S rRNA sequencing
+              and QIIME2. Ran alpha/beta diversity analyses and PERMANOVA/PCoA to evaluate associations between
+              microbial community structure and radiation-induced skin toxicity.
             </p>
           </article>
+
           <article class="card">
-            <h3>Oncology Telehealth</h3>
+            <h3>Research Assistant, UNC Eshelman School of Pharmacy</h3>
             <p>
-              Contributed to qualitative oncology telehealth research among Black adults,
-              supporting analysis and publication development.
+              Reviewed 50+ publications and supported qualitative analysis of oncology telehealth interviews.
+              Contributed to findings on trust and communication barriers in virtual visits and co-authored
+              peer-reviewed work in The Oncologist.
             </p>
+          </article>
+
+          <article class="card">
+            <h3>Research Assistant, UNC Pathology</h3>
+            <p>
+              Investigated MBD2 protein mutations and their impact on protein-protein interaction behavior,
+              focusing on site-specific modifications connected to cancer biology mechanisms.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Research Intern, Duke Cell Biology</h3>
+            <p>
+              Studied Long Terminal Repeat 7 (LTR7) sequence function in human embryonic stem cells and observed
+              reduced proliferation after LTR7 alteration, highlighting its role in stem cell growth maintenance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section fade">
+      <div class="container">
+        <p class="eyebrow">Featured Projects</p>
+        <h2 class="section-title">Applied projects across health, education, and sports data.</h2>
+
+        <div class="project-grid balanced-grid">
+          <article class="card project-card">
+            <h3>Early Diabetes Detection and Risk Prediction</h3>
+            <p class="project-summary">
+              Built an early screening model using BRFSS data to identify high-risk individuals before diagnosis.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Large, imbalanced public health dataset with mixed signal quality.</li>
+              <li><strong>Approach:</strong> Processed 253,680 records, used SMOTE and outlier handling, and trained XGBoost/Random Forest models.</li>
+              <li><strong>Outcome:</strong> Reached about 85% accuracy with strong agreement metrics over baseline methods.</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>NBA Statistics Prediction</h3>
+            <p class="project-summary">
+              Modeled game-level outcomes and team statistics across 1,116 NBA games.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Forecast multiple performance targets with changing team dynamics.</li>
+              <li><strong>Approach:</strong> Built Random Forest and linear regression pipelines for spreads and box-score metrics.</li>
+              <li><strong>Outcome:</strong> Achieved high predictive performance, including sub-1 MAE on selected outcomes.</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>In-Depth Analysis of 9-Ball Billiards</h3>
+            <p class="project-summary">
+              Quantified shot-level behavior and accuracy trends in competitive play.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Understand what drives momentum and consistency across matches.</li>
+              <li><strong>Approach:</strong> Ran multiple regression analyses in R over 150+ games.</li>
+              <li><strong>Outcome:</strong> Found a 16% higher success rate in the mid-phase of games.</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>Evolution of Offense and Defense in the NBA</h3>
+            <p class="project-summary">
+              Longitudinal modeling project on 40 years of league strategy shifts.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Identify which metrics most strongly track winning in modern eras.</li>
+              <li><strong>Approach:</strong> Built trend and regression analyses across historical team-level data.</li>
+              <li><strong>Outcome:</strong> Showed 3-point efficiency as a stronger success predictor than defense-focused metrics alone.</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>Crime and School Infrastructure Impact on SAT Scores</h3>
+            <p class="project-summary">
+              Statistical analysis of environment-linked variation in school-level SAT outcomes.
+            </p>
+            <ul class="project-points">
+              <li><strong>Problem:</strong> Separate actionable social indicators from weak correlational noise.</li>
+              <li><strong>Approach:</strong> Used regression and correlation analysis across 100+ schools and city-level predictors.</li>
+              <li><strong>Outcome:</strong> Detected a moderate negative relationship between violent crime and scores.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -274,16 +314,17 @@
 
     <section id="publications" class="section fade">
       <div class="container">
-        <p class="eyebrow">Publications</p>
-        <h2 class="section-title">Peer-reviewed and scholarly contributions.</h2>
+        <p class="eyebrow">Publications and Abstracts</p>
+        <h2 class="section-title">Peer-reviewed work and research outputs.</h2>
 
-        <div class="experience-grid">
+        <div class="experience-grid balanced-grid">
           <article class="card">
             <h3>The Perceived Usability of Virtual Visits Among Black Adults Receiving Oncology Care</h3>
             <p><em>The Oncologist, 2023</em></p>
             <p>
               Tam S, Neslund-Dudas C, Barrett AM, Barrow LCJ, Fridman I, Kinlaw AC,
               <strong>Puviindran P</strong>, Royce TJ, Smith AB, Stein JN, Wood WA, Lafata JE.
+              Qualitative oncology telehealth study highlighting communication and trust barriers in virtual care.
             </p>
             <a class="inline-link" href="https://doi.org/10.1093/oncolo/oyad260" target="_blank" rel="noreferrer">View publication</a>
           </article>
@@ -294,6 +335,7 @@
             <p>
               Lafata JE, Tam S, Neslund-Dudas C, Barrett AM, Fridman I, Barrow LCJ, Kinlaw AC,
               Middlebrooke W, <strong>Puviindran P</strong>, Royce TJ, Smith AB, Stein JN, Wood WA.
+              Conference abstract reporting participant perspectives on telehealth usability in oncology.
             </p>
             <a class="inline-link" href="https://ascopubs.org/doi/10.1200/JCO.2022.40.28_suppl.174" target="_blank" rel="noreferrer">View publication</a>
           </article>
@@ -302,8 +344,8 @@
             <h3>Function of HERVH in the Regulation of hESC Growth</h3>
             <p><em>Unpublished Abstract, 2019</em></p>
             <p>
-              <strong>Puviindran P</strong>, Sun T, Diao Y. Early investigation into how HERVH influences
-              human embryonic stem cell growth and maintenance.
+              <strong>Puviindran P</strong>, Sun T, Diao Y. Early stem cell biology project examining how HERVH-linked
+              regulation influences hESC growth and maintenance behavior.
             </p>
           </article>
         </div>
@@ -312,49 +354,49 @@
 
     <section id="leadership" class="section fade">
       <div class="container">
-        <p class="eyebrow">Leadership + Music</p>
-        <h2 class="section-title">Community impact beyond technical work.</h2>
+        <p class="eyebrow">Community Impact</p>
+        <h2 class="section-title">Leadership, advocacy, and music-focused service.</h2>
 
-        <div class="experience-grid">
+        <div class="experience-grid balanced-grid">
           <article class="card">
-            <h3>Senior Co-President | Musical Empowerment</h3>
+            <h3>Senior Co-President, Musical Empowerment</h3>
             <p>
-              Managed 140+ volunteers across 13 chapters and led community programming
-              for accessible music education.
+              Organize and facilitate free 40-minute music lessons for underprivileged youth, supervise
+              141 teacher-student pairs, and coordinate national chapter communication across 13 counterparts.
             </p>
           </article>
 
           <article class="card">
-            <h3>Music Director | UNC Samaa A Cappella</h3>
+            <h3>Music Director, UNC Samaa A Cappella</h3>
             <p>
-              Led rehearsals, arrangement direction, and performance strategy for a
-              South Asian and Western fusion ensemble.
+              Compose mashups, lead rehearsals, mentor junior arrangers, and direct performance preparation
+              for a 15-member team across competitions and campus showcases.
             </p>
           </article>
 
           <article class="card">
-            <h3>Piano Teaching + Performance</h3>
+            <h3>Founder and Lead Teacher, NC Youth for Peace</h3>
             <p>
-              Teach technique and interpretation while arranging cross-genre pieces
-              spanning classical, Tamil, and contemporary styles.
-            </p>
-            <a href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/" class="inline-link" target="_blank" rel="noreferrer">Visit piano site</a>
-          </article>
-
-          <article class="card">
-            <h3>Founder | NC Youth for Peace</h3>
-            <p>
-              Created and led a three-year English learning program for students in Sri Lanka
-              with a six-person teaching team.
+              Built and led a multi-country online English program for 40+ Sri Lankan students,
+              coordinating a six-teacher team and delivering four weekly teaching sessions.
             </p>
           </article>
 
           <article class="card">
-            <h3>United States Tamil Action Group</h3>
+            <h3>Director of Recruitment, American Lung Cancer Screening Initiative</h3>
             <p>
-              Supported advocacy work on civil rights in Sri Lanka and contributed
-              educational materials for graduate-level human rights coursework.
+              Organized recruitment events, coordinated awareness campaigns at UNC hospitals,
+              and helped increase student participation in lung cancer screening advocacy efforts.
             </p>
+          </article>
+
+          <article class="card">
+            <h3>Youth Intern, United States Tamil Action Group</h3>
+            <p>
+              Participated in policy advocacy meetings with congressional representatives and ambassadors,
+              attended UN Human Rights Council sessions, and supported educational initiatives on civil rights.
+            </p>
+            <a href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/" class="inline-link" target="_blank" rel="noreferrer">Visit music site</a>
           </article>
         </div>
       </div>
@@ -374,7 +416,7 @@
     <section id="contact" class="section fade">
       <div class="container">
         <p class="eyebrow">Contact</p>
-        <h2 class="section-title">Open to research and data science collaborations.</h2>
+        <h2 class="section-title">Contact me.</h2>
         <article class="card contact-card">
           <p><strong>Email:</strong> <a class="inline-link" href="mailto:praveen.puviindran@gmail.com">praveen.puviindran@gmail.com</a></p>
           <p><strong>LinkedIn:</strong> <a class="inline-link" href="https://linkedin.com/in/praveen-puviindran" target="_blank" rel="noreferrer">linkedin.com/in/praveen-puviindran</a></p>

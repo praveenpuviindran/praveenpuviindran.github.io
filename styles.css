@@ -353,6 +353,15 @@ body[data-theme="light"] .toggle-thumb {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+/* Keep odd card counts visually balanced in two-column desktop grids */
+@media (min-width: 1021px) {
+  .balanced-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(33rem, 100%);
+  }
+}
+
 .section-accent {
   background: linear-gradient(
     180deg,
