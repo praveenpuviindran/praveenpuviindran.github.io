@@ -33,6 +33,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#postgrad">Post-Graduate Work</a>
+        <a href="#nba-portfolio">NBA Portfolio</a>
         <a href="#undergrad">Undergraduate Work</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
@@ -54,7 +55,7 @@
     <section id="home" class="hero section fade">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Data Science Across Domains</p>
+          <p class="eyebrow">Data Scientist</p>
           <h1>I'm Praveen.</h1>
           <p class="hero-subtitle">
             I build machine learning and statistical workflows across biomedical research, sports analytics,
@@ -131,7 +132,7 @@
             </ul>
             <h3>Outside Interests</h3>
             <p>
-              Outside technical work, I am involved in piano performance, piano pedagogy, and a cappella arrangement.
+              Outside technical work, I am passionate about piano performance, piano pedagogy, and a cappella arrangement.
               I also enjoy billiards and basketball, which often inspire my sports analytics projects.
               You can see my music work here:
               <a href="https://praveenpuviindranmusic.wordpress.com/2020/02/09/praveen-puviindran/" class="inline-link" target="_blank" rel="noreferrer">Music website</a>.
@@ -144,11 +145,12 @@
     <section id="postgrad" class="section fade section-accent">
       <div class="container">
         <p class="eyebrow">Post-Graduate Work</p>
-        <h2 class="section-title">Current projects in biomedical research and sports analytics.</h2>
+        <h2 class="section-title">Framingham Heart Study projects (Sep 2025 - Present).</h2>
 
         <div class="experience-grid balanced-grid">
           <article class="card">
             <h3>Framingham Heart Study: Proteomic Biomarker Discovery</h3>
+            <p><em>Sep 2025 - Present</em></p>
             <p>
               Leading analysis pipelines for heavy menstrual bleeding biomarker discovery using large-scale
               proteomic data from the Framingham cohort.
@@ -162,6 +164,7 @@
 
           <article class="card">
             <h3>Framingham Heart Study: Platelet Extremes Modeling</h3>
+            <p><em>Sep 2025 - Present</em></p>
             <p>
               Building a machine learning framework to differentiate platelet extreme phenotypes in patients,
               with emphasis on robust feature engineering and interpretable model outputs.
@@ -172,17 +175,27 @@
               <li>Tracking precision, recall, and calibration to prioritize models that are both reliable and interpretable.</li>
             </ul>
           </article>
+        </div>
+      </div>
+    </section>
 
+    <section id="nba-portfolio" class="section fade">
+      <div class="container">
+        <p class="eyebrow">NBA Portfolio</p>
+        <h2 class="section-title">Independent NBA analytics builds with production-style modeling and dashboards.</h2>
+
+        <div class="experience-grid balanced-grid">
           <article class="card">
             <h3>NBA Synergy Engine</h3>
+            <p><em>Jan 2026</em></p>
             <p>
               Built a lineup chemistry platform that predicts fit and recommends high-value five-player units.
             </p>
             <ul class="list-clean">
-              <li>Processed 170,000+ possessions with Python and SQL feature pipelines.</li>
-              <li>Used PCA and Gaussian Mixture clustering to identify player archetypes across lineup contexts.</li>
+              <li>Engineered possession-level features from 170,000+ possessions using Python and SQL pipelines.</li>
+              <li>Used PCA and Gaussian Mixture models to derive player archetypes across lineup contexts.</li>
               <li>Implemented DeepSet models in PyTorch to score five-player fit and rank high-upside combinations.</li>
-              <li>Delivered an interactive app for lineup exploration and chemistry-driven decision support.</li>
+              <li>Shipped an interactive dashboard for lineup scenario testing and chemistry-driven decision support.</li>
             </ul>
             <a href="https://nba-synergy-engine.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
             <a href="https://github.com/praveenpuviindran/nba-synergy-engine" target="_blank" rel="noreferrer" class="inline-link">GitHub Repository</a>
@@ -190,14 +203,15 @@
 
           <article class="card">
             <h3>NBA ShotIQ</h3>
+            <p><em>Feb 2026</em></p>
             <p>
               Built an interactive shot analytics app to compare shot difficulty with actual shot-making across players and seasons.
             </p>
             <ul class="list-clean">
-              <li>Filter by player, season, and game type (Regular Season and Playoffs).</li>
-              <li>Visualize shot profiles through two complementary views: Hexbin and Court Zone.</li>
-              <li>Compare five core metrics: Attempts, FG%, xFG%, SMOE, and Shot Diet Difficulty.</li>
-              <li>Explore sortable leaderboards with best/worst shooting spots and model diagnostics.</li>
+              <li>Built expected-FG modeling workflows to benchmark shot quality against actual shot-making.</li>
+              <li>Enabled filters for player, season, and game type (Regular Season and Playoffs).</li>
+              <li>Visualized shot profiles through Hexbin and Court Zone views with five core metrics (Attempts, FG%, xFG%, SMOE, and Shot Diet Difficulty).</li>
+              <li>Added sortable leaderboards, best/worst spot breakdowns, and model diagnostic views.</li>
             </ul>
             <a href="https://nbashotiq.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
             <a href="https://github.com/praveenpuviindran/nba_shotiq" target="_blank" rel="noreferrer" class="inline-link">GitHub Repository</a>
@@ -209,11 +223,12 @@
     <section id="undergrad" class="section fade">
       <div class="container">
         <p class="eyebrow">Undergraduate Research</p>
-        <h2 class="section-title">Lab and statistical research experiences.</h2>
+        <h2 class="section-title">Wet-lab and statistical research experiences.</h2>
 
         <div class="experience-grid balanced-grid">
           <article class="card">
             <h3>Statistical Consultant, UNC Data Science and Society</h3>
+            <p><em>Jan 2025 - Jun 2025</em></p>
             <p>
               Built a Kaposi Sarcoma subtype classifier using viral RNA-seq data from HIV-positive patient tumors.
               Applied PCA clustering (silhouette score 0.77), then benchmarked four model families (LASSO, SVM, RF, and MLP),
@@ -223,6 +238,7 @@
 
           <article class="card">
             <h3>Research Assistant, UNC Pharmacology</h3>
+            <p><em>Jun 2023 - Jun 2025</em></p>
             <p>
               Led 20-day longitudinal cell culture studies across two lung cancer cell lines (NCI-H2228 and HCC827)
               to evaluate chemotherapy dosing schedules. Analyzed viability trajectories in R and Mathematica and found that
@@ -232,6 +248,7 @@
 
           <article class="card">
             <h3>Research Assistant, UNC Neurology</h3>
+            <p><em>Jul 2024 - Jun 2025</em></p>
             <p>
               Conducted directional connectivity analysis of hippocampal regions in epilepsy using Dynamic Causal
               Modeling and resting-state fMRI. Preprocessed imaging data in SPM and compared directional connectivity
@@ -241,24 +258,28 @@
 
           <article class="card">
             <h3>CPRIT/CURE Summer Research Intern, MD Anderson</h3>
+            <p><em>Jun 2024 - Aug 2024</em></p>
             <p>
-              Studied skin microbiome diversity in patients receiving radiation therapy using 16S rRNA sequencing
-              and QIIME2 workflows. Ran alpha/beta diversity analyses with PERMANOVA/PCoA to evaluate associations
+              Selected into a competitive summer research program (10% admission rate) to study skin microbiome diversity
+              in patients receiving radiation therapy using 16S rRNA sequencing and QIIME2 workflows. Ran alpha/beta diversity analyses with PERMANOVA/PCoA to evaluate associations
               between microbial community structure and radiation-induced skin toxicity.
             </p>
           </article>
 
           <article class="card">
             <h3>Research Assistant, UNC Eshelman School of Pharmacy</h3>
+            <p><em>May 2022 - Nov 2023</em></p>
             <p>
-              Reviewed 50+ publications and supported qualitative analysis of oncology telehealth interviews.
-              Contributed to findings on trust and communication barriers in virtual visits and co-authored
+              Reviewed 50+ publications and supported qualitative analysis of 49 oncology telehealth interviews,
+              including findings that 59% of participants had used virtual visits while many still preferred in-person care.
+              Contributed to findings on trust and communication barriers and co-authored
               peer-reviewed outputs including work published in <em>The Oncologist</em>.
             </p>
           </article>
 
           <article class="card">
             <h3>Research Assistant, UNC Pathology</h3>
+            <p><em>Jan 2022 - May 2022</em></p>
             <p>
               Investigated MBD2 protein mutations and their impact on protein-protein interaction behavior,
               focusing on site-specific modifications connected to cancer biology mechanisms.
@@ -267,6 +288,7 @@
 
           <article class="card">
             <h3>Research Intern, Duke Cell Biology</h3>
+            <p><em>Jun 2019 - Jul 2019</em></p>
             <p>
               Studied Long Terminal Repeat 7 (LTR7) sequence function in human embryonic stem cells and observed
               reduced proliferation after LTR7 alteration, highlighting its role in stem cell growth maintenance.
@@ -278,67 +300,72 @@
 
     <section id="projects" class="section fade">
       <div class="container">
-        <p class="eyebrow">Featured Projects</p>
-        <h2 class="section-title">Applied projects across health, education, and sports data.</h2>
+        <p class="eyebrow">Featured Projects (Undergraduate)</p>
+        <h2 class="section-title">Undergraduate project portfolio across health, education, and sports data.</h2>
 
         <div class="project-grid balanced-grid">
           <article class="card project-card">
             <h3>Early Diabetes Detection and Risk Prediction</h3>
+            <p><em>Oct 2024 - Dec 2024</em></p>
             <p class="project-summary">
               Built an early screening model using BRFSS data to identify high-risk individuals before diagnosis.
             </p>
             <ul class="project-points">
               <li><strong>Problem:</strong> Large, imbalanced public health dataset with mixed signal quality across 253,680 BRFSS records.</li>
               <li><strong>Approach:</strong> Applied SMOTE and outlier handling, then benchmarked XGBoost and Random Forest pipelines.</li>
-              <li><strong>Outcome:</strong> Reached about 85% accuracy with stronger agreement and recall than baseline methods.</li>
+              <li><strong>Outcome:</strong> Reached about 85% accuracy with a QWK score of 0.85 and stronger recall than baseline methods.</li>
             </ul>
           </article>
 
           <article class="card project-card">
             <h3>NBA Statistics Prediction</h3>
+            <p><em>Feb 2024 - Mar 2024</em></p>
             <p class="project-summary">
               Modeled game-level outcomes and team statistics across 1,116 NBA games.
             </p>
             <ul class="project-points">
               <li><strong>Problem:</strong> Forecast multiple performance targets while team dynamics shift throughout the season.</li>
               <li><strong>Approach:</strong> Built Random Forest and linear regression pipelines for point spreads and box-score outputs.</li>
-              <li><strong>Outcome:</strong> Achieved high predictive performance, including sub-1 MAE on selected targets.</li>
+              <li><strong>Outcome:</strong> Predicted spreads at about 90% accuracy (R²=0.998, MAE=0.365) and achieved MAE &lt; 1 on selected box-score targets.</li>
             </ul>
           </article>
 
           <article class="card project-card">
             <h3>In-Depth Analysis of 9-Ball Billiards</h3>
+            <p><em>Jan 2024 - Feb 2024</em></p>
             <p class="project-summary">
               Quantified shot-level behavior and accuracy trends in competitive play.
             </p>
             <ul class="project-points">
               <li><strong>Problem:</strong> Understand what drives momentum and consistency across competitive matches.</li>
               <li><strong>Approach:</strong> Ran multiple regression analyses in R over 150+ games.</li>
-              <li><strong>Outcome:</strong> Found a 16% higher success rate in the mid-phase of games versus early phases.</li>
+              <li><strong>Outcome:</strong> Found a 16% higher success rate in mid-game phases, with no significant advantage from break performance or dominant hand.</li>
             </ul>
           </article>
 
           <article class="card project-card">
             <h3>Evolution of Offense and Defense in the NBA</h3>
+            <p><em>Jun 2023 - Aug 2023</em></p>
             <p class="project-summary">
               Longitudinal modeling project on 40 years of league strategy shifts.
             </p>
             <ul class="project-points">
               <li><strong>Problem:</strong> Identify which metrics most strongly track winning across 40 years of NBA strategy change.</li>
               <li><strong>Approach:</strong> Built trend decomposition and regression analyses across historical team-level data.</li>
-              <li><strong>Outcome:</strong> Showed 3-point efficiency as a stronger success predictor than defense-focused metrics alone.</li>
+              <li><strong>Outcome:</strong> Showed 3-point efficiency as a roughly 30% stronger success predictor than defense-focused metrics alone.</li>
             </ul>
           </article>
 
           <article class="card project-card">
             <h3>Crime and School Infrastructure Impact on SAT Scores</h3>
+            <p><em>Jun 2023 - Aug 2023</em></p>
             <p class="project-summary">
               Statistical analysis of environment-linked variation in school-level SAT outcomes.
             </p>
             <ul class="project-points">
               <li><strong>Problem:</strong> Separate actionable social indicators from weak correlational noise across 100+ schools.</li>
               <li><strong>Approach:</strong> Used regression and correlation analysis spanning school infrastructure and city-level crime predictors.</li>
-              <li><strong>Outcome:</strong> Detected a moderate negative relationship between violent crime and SAT performance.</li>
+              <li><strong>Outcome:</strong> Found a -0.45 correlation between violent crime and SAT performance, while non-violent crime showed limited impact.</li>
             </ul>
           </article>
         </div>
@@ -353,7 +380,7 @@
         <div class="experience-grid balanced-grid">
           <article class="card">
             <h3>The Perceived Usability of Virtual Visits Among Black Adults Receiving Oncology Care</h3>
-            <p><em>The Oncologist, 2023</em></p>
+            <p><em>The Oncologist, Sep 26, 2023</em></p>
             <p>
               Tam S, Neslund-Dudas C, Barrett AM, Barrow LCJ, Fridman I, Kinlaw AC,
               <strong>Puviindran P</strong>, Royce TJ, Smith AB, Stein JN, Wood WA, Lafata JE.
@@ -364,7 +391,7 @@
 
           <article class="card">
             <h3>A Qualitative Study of Black Adults' Perceptions of Virtual Visits in Oncology Care</h3>
-            <p><em>Journal of Clinical Oncology, 2022</em></p>
+            <p><em>Journal of Clinical Oncology, Sep 30, 2022</em></p>
             <p>
               Lafata JE, Tam S, Neslund-Dudas C, Barrett AM, Fridman I, Barrow LCJ, Kinlaw AC,
               Middlebrooke W, <strong>Puviindran P</strong>, Royce TJ, Smith AB, Stein JN, Wood WA.
@@ -375,7 +402,7 @@
 
           <article class="card">
             <h3>Function of HERVH in the Regulation of hESC Growth</h3>
-            <p><em>Unpublished Abstract, 2019</em></p>
+            <p><em>Unpublished Abstract, Aug 2019</em></p>
             <p>
               <strong>Puviindran P</strong>, Sun T, Diao Y. Early stem cell biology project examining how HERVH-linked
               regulation influences hESC growth and maintenance behavior.
@@ -393,22 +420,26 @@
         <div class="experience-grid balanced-grid">
           <article class="card">
             <h3>Senior Co-President, Musical Empowerment</h3>
+            <p><em>Aug 2021 - Present</em></p>
             <p>
               Organize and facilitate free 40-minute music lessons for underprivileged youth, supervise
-              141 teacher-student pairs, and coordinate national chapter communication across 13 counterparts.
+              141 teacher-student pairs, coordinate chapter communication across 13 national counterparts,
+              and support 6+ community events annually.
             </p>
           </article>
 
           <article class="card">
             <h3>Music Director, UNC Samaa A Cappella</h3>
+            <p><em>Jan 2023 - Present</em></p>
             <p>
               Compose mashups, lead rehearsals, mentor junior arrangers, and direct performance preparation
-              for a 15-member team across competitions and campus showcases.
+              for a 15-member team across competitions and campus showcases, including 10+ performances annually.
             </p>
           </article>
 
           <article class="card">
             <h3>Founder and Lead Teacher, NC Youth for Peace</h3>
+            <p><em>Mar 2021 - Sep 2023</em></p>
             <p>
               Built and led a multi-country online English program for 40+ Sri Lankan students,
               coordinating a six-teacher team and delivering four weekly teaching sessions.
@@ -417,17 +448,19 @@
 
           <article class="card">
             <h3>Director of Recruitment, American Lung Cancer Screening Initiative</h3>
+            <p><em>Aug 2022 - Present</em></p>
             <p>
-              Organized recruitment events, coordinated awareness campaigns at UNC hospitals,
-              and helped increase student participation in lung cancer screening advocacy efforts.
+              Coordinated 4 recruitment events, led distribution of 50+ white ribbons at UNC hospitals,
+              and helped increase student participation in screening advocacy by 30%.
             </p>
           </article>
 
           <article class="card">
             <h3>Youth Intern, United States Tamil Action Group</h3>
+            <p><em>Jan 2020 - Aug 2021</em></p>
             <p>
-              Participated in policy advocacy meetings with congressional representatives and ambassadors,
-              attended UN Human Rights Council sessions, and supported educational initiatives on civil rights.
+              Participated in advocacy meetings with 20+ congressional representatives and ambassadors,
+              attended 3 UN Human Rights Council sessions, and supported educational initiatives on civil rights.
             </p>
           </article>
         </div>
