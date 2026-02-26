@@ -146,15 +146,16 @@ body[data-theme="light"] .site-header {
   justify-self: center;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: clamp(0.55rem, 0.85vw, 1rem);
 }
 
 .nav a {
   text-decoration: none;
   color: var(--text-muted);
   font-weight: 600;
-  font-size: 0.86rem;
+  font-size: clamp(0.78rem, 0.72rem + 0.22vw, 0.86rem);
   padding: 0.4rem 0;
+  white-space: nowrap;
   border-bottom: 2px solid transparent;
   transition: color 200ms ease, border-color 200ms ease;
 }
