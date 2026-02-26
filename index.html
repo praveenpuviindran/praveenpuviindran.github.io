@@ -154,9 +154,9 @@
               proteomic data from the Framingham cohort.
             </p>
             <ul class="list-clean">
-              <li>Working with approximately 3,000 proteins across roughly 25,000 participant records.</li>
-              <li>Using feature selection and network-style analyses to identify candidate biomarker signatures.</li>
-              <li>Building protein-informed risk score concepts aimed at earlier clinical detection.</li>
+              <li>Analyzing approximately 3,000 proteins across roughly 25,000 participant records (about 75 million protein-level values).</li>
+              <li>Using multi-stage feature selection and network-style analyses to narrow thousands of signals into candidate biomarker panels.</li>
+              <li>Building protein-informed risk score prototypes aimed at earlier clinical detection.</li>
             </ul>
           </article>
 
@@ -167,9 +167,9 @@
               with emphasis on robust feature engineering and interpretable model outputs.
             </p>
             <ul class="list-clean">
-              <li>Defining cohort segments and phenotype boundaries for low and high platelet states in >3,000 patients.</li>
-              <li>Testing classification workflows that integrate clinical covariates and omics-style features.</li>
-              <li>Establishing a foundation for expanded analysis as project scope and data mature.</li>
+              <li>Defining reproducible cohort segments and phenotype boundaries for low and high platelet states in more than 3,000 patients.</li>
+              <li>Testing classification workflows that combine clinical covariates with omics-style features under cross-validated evaluation.</li>
+              <li>Tracking precision, recall, and calibration to prioritize models that are both reliable and interpretable.</li>
             </ul>
           </article>
 
@@ -180,10 +180,25 @@
             </p>
             <ul class="list-clean">
               <li>Processed 170,000+ possessions with Python and SQL feature pipelines.</li>
-              <li>Used PCA and Gaussian Mixture clustering for player archetype identification.</li>
-              <li>Implemented DeepSet models in PyTorch for lineup-level representation learning.</li>
+              <li>Used PCA and Gaussian Mixture clustering for player archetype identification across lineup-level context features.</li>
+              <li>Implemented DeepSet models in PyTorch to score five-player fit and rank high-upside lineup combinations.</li>
             </ul>
             <a href="https://nba-synergy-engine.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
+          </article>
+
+          <article class="card">
+            <h3>NBA ShotIQ</h3>
+            <p>
+              Built an interactive shot analytics app to compare shot difficulty with actual shot-making across players and seasons.
+            </p>
+            <ul class="list-clean">
+              <li>Filter by player, season, and game type (Regular Season and Playoffs).</li>
+              <li>Visualize shot profiles in two complementary views: Hexbin and Court Zone.</li>
+              <li>Compare five core metrics: Attempts, FG%, xFG%, SMOE, and Shot Diet Difficulty.</li>
+              <li>Explore sortable season leaderboards plus best/worst shooting spot analysis and model diagnostics.</li>
+            </ul>
+            <a href="https://nbashotiq.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
+            <a href="https://github.com/praveenpuviindran/nba_shotiq" target="_blank" rel="noreferrer" class="inline-link">GitHub Repository</a>
           </article>
         </div>
       </div>
@@ -199,7 +214,7 @@
             <h3>Statistical Consultant, UNC Data Science and Society</h3>
             <p>
               Built a Kaposi Sarcoma subtype classifier using viral RNA-seq data from HIV-positive patient tumors.
-              Applied PCA clustering (silhouette score 0.77), then trained LASSO, SVM, RF, and MLP models,
+              Applied PCA clustering (silhouette score 0.77), then benchmarked four model families (LASSO, SVM, RF, and MLP),
               reaching ROC-AUC of 0.95 and identifying a six-gene panel with RFE and SHAP.
             </p>
           </article>
@@ -207,8 +222,8 @@
           <article class="card">
             <h3>Research Assistant, UNC Pharmacology</h3>
             <p>
-              Led 20-day cell culture studies in lung cancer cell lines (NCI-H2228 and HCC827) to evaluate
-              chemotherapy dosing schedules. Analyzed viability outcomes in R and Mathematica and found that
+              Led 20-day longitudinal cell culture studies across two lung cancer cell lines (NCI-H2228 and HCC827)
+              to evaluate chemotherapy dosing schedules. Analyzed viability trajectories in R and Mathematica and found that
               cyclical Docetaxel/Paclitaxel regimens maintained efficacy while reducing toxicity burden.
             </p>
           </article>
@@ -217,8 +232,8 @@
             <h3>Research Assistant, UNC Neurology</h3>
             <p>
               Conducted directional connectivity analysis of hippocampal regions in epilepsy using Dynamic Causal
-              Modeling and resting-state fMRI. Preprocessed imaging data in SPM and compared connectivity outputs
-              in MATLAB to characterize seizure propagation pathways.
+              Modeling and resting-state fMRI. Preprocessed imaging data in SPM and compared directional connectivity
+              matrices in MATLAB to characterize seizure propagation pathways.
             </p>
           </article>
 
@@ -226,8 +241,8 @@
             <h3>CPRIT/CURE Summer Research Intern, MD Anderson</h3>
             <p>
               Studied skin microbiome diversity in patients receiving radiation therapy using 16S rRNA sequencing
-              and QIIME2. Ran alpha/beta diversity analyses and PERMANOVA/PCoA to evaluate associations between
-              microbial community structure and radiation-induced skin toxicity.
+              and QIIME2 workflows. Ran alpha/beta diversity analyses with PERMANOVA/PCoA to evaluate associations
+              between microbial community structure and radiation-induced skin toxicity.
             </p>
           </article>
 
@@ -236,7 +251,7 @@
             <p>
               Reviewed 50+ publications and supported qualitative analysis of oncology telehealth interviews.
               Contributed to findings on trust and communication barriers in virtual visits and co-authored
-              peer-reviewed work in The Oncologist.
+              peer-reviewed outputs including work published in <em>The Oncologist</em>.
             </p>
           </article>
 
@@ -271,9 +286,9 @@
               Built an early screening model using BRFSS data to identify high-risk individuals before diagnosis.
             </p>
             <ul class="project-points">
-              <li><strong>Problem:</strong> Large, imbalanced public health dataset with mixed signal quality.</li>
-              <li><strong>Approach:</strong> Processed 253,680 records, used SMOTE and outlier handling, and trained XGBoost/Random Forest models.</li>
-              <li><strong>Outcome:</strong> Reached about 85% accuracy with strong agreement metrics over baseline methods.</li>
+              <li><strong>Problem:</strong> Large, imbalanced public health dataset with mixed signal quality across 253,680 BRFSS records.</li>
+              <li><strong>Approach:</strong> Applied SMOTE and outlier handling, then benchmarked XGBoost and Random Forest pipelines.</li>
+              <li><strong>Outcome:</strong> Reached about 85% accuracy with stronger agreement and recall than baseline methods.</li>
             </ul>
           </article>
 
@@ -283,9 +298,9 @@
               Modeled game-level outcomes and team statistics across 1,116 NBA games.
             </p>
             <ul class="project-points">
-              <li><strong>Problem:</strong> Forecast multiple performance targets with changing team dynamics.</li>
-              <li><strong>Approach:</strong> Built Random Forest and linear regression pipelines for spreads and box-score metrics.</li>
-              <li><strong>Outcome:</strong> Achieved high predictive performance, including sub-1 MAE on selected outcomes.</li>
+              <li><strong>Problem:</strong> Forecast multiple performance targets while team dynamics shift throughout the season.</li>
+              <li><strong>Approach:</strong> Built Random Forest and linear regression pipelines for point spreads and box-score outputs.</li>
+              <li><strong>Outcome:</strong> Achieved high predictive performance, including sub-1 MAE on selected targets.</li>
             </ul>
           </article>
 
@@ -295,9 +310,9 @@
               Quantified shot-level behavior and accuracy trends in competitive play.
             </p>
             <ul class="project-points">
-              <li><strong>Problem:</strong> Understand what drives momentum and consistency across matches.</li>
+              <li><strong>Problem:</strong> Understand what drives momentum and consistency across competitive matches.</li>
               <li><strong>Approach:</strong> Ran multiple regression analyses in R over 150+ games.</li>
-              <li><strong>Outcome:</strong> Found a 16% higher success rate in the mid-phase of games.</li>
+              <li><strong>Outcome:</strong> Found a 16% higher success rate in the mid-phase of games versus early phases.</li>
             </ul>
           </article>
 
@@ -307,8 +322,8 @@
               Longitudinal modeling project on 40 years of league strategy shifts.
             </p>
             <ul class="project-points">
-              <li><strong>Problem:</strong> Identify which metrics most strongly track winning in modern eras.</li>
-              <li><strong>Approach:</strong> Built trend and regression analyses across historical team-level data.</li>
+              <li><strong>Problem:</strong> Identify which metrics most strongly track winning across 40 years of NBA strategy change.</li>
+              <li><strong>Approach:</strong> Built trend decomposition and regression analyses across historical team-level data.</li>
               <li><strong>Outcome:</strong> Showed 3-point efficiency as a stronger success predictor than defense-focused metrics alone.</li>
             </ul>
           </article>
@@ -319,9 +334,9 @@
               Statistical analysis of environment-linked variation in school-level SAT outcomes.
             </p>
             <ul class="project-points">
-              <li><strong>Problem:</strong> Separate actionable social indicators from weak correlational noise.</li>
-              <li><strong>Approach:</strong> Used regression and correlation analysis across 100+ schools and city-level predictors.</li>
-              <li><strong>Outcome:</strong> Detected a moderate negative relationship between violent crime and scores.</li>
+              <li><strong>Problem:</strong> Separate actionable social indicators from weak correlational noise across 100+ schools.</li>
+              <li><strong>Approach:</strong> Used regression and correlation analysis spanning school infrastructure and city-level crime predictors.</li>
+              <li><strong>Outcome:</strong> Detected a moderate negative relationship between violent crime and SAT performance.</li>
             </ul>
           </article>
         </div>
