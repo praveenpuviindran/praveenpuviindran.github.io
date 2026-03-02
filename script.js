@@ -62,13 +62,18 @@ faders.forEach((element) => fadeObserver.observe(element));
 
 const sections = document.querySelectorAll('main section[id]');
 const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+const activeNavMap = {
+  'nba-portfolio': 'postgrad',
+  projects: 'undergrad'
+};
 
 const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const id = entry.target.getAttribute('id');
+      const navId = activeNavMap[id] || id;
       navLinks.forEach((link) => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        link.classList.toggle('active', link.getAttribute('href') === `#${navId}`);
       });
     }
   });
