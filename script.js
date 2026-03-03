@@ -64,7 +64,8 @@ const sections = document.querySelectorAll('main section[id]');
 const navLinks = document.querySelectorAll('.nav a[href^="#"]');
 const activeNavMap = {
   'nba-portfolio': 'postgrad',
-  projects: 'undergrad'
+  undergrad: 'postgrad',
+  projects: 'postgrad'
 };
 
 const sectionObserver = new IntersectionObserver((entries) => {
