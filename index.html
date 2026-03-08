@@ -187,6 +187,22 @@
           </article>
 
           <article class="card">
+            <h3>LitLens</h3>
+            <p><em>Feb 2026 - Mar 2026</em></p>
+            <p>
+              Built a biomedical literature intelligence engine that retrieves, deduplicates, ranks, and synthesises research evidence from PubMed and Semantic Scholar in under 10 seconds.
+            </p>
+            <ul class="list-clean">
+              <li>Queried PubMed and Semantic Scholar in parallel, retrieving up to 50 candidate papers and deduplicating across sources using exact DOI matching and fuzzy title similarity.</li>
+              <li>Reranked papers using a hybrid of semantic cosine similarity (sentence-transformers, all-MiniLM-L6-v2) and Okapi BM25, weighting semantic relevance at 65%.</li>
+              <li>Built a query intent classifier to distinguish intervention, descriptive, and search-term inputs, producing directionally appropriate evidence summaries with full citation traceability.</li>
+              <li>Deployed as a zero-configuration Streamlit app with no paid APIs, no database, and extractive synthesis where every output sentence traces verbatim to a source abstract.</li>
+            </ul>
+            <a href="https://litlens.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
+            <a href="https://github.com/praveenpuviindran/litlens" target="_blank" rel="noreferrer" class="inline-link">GitHub Repository</a>
+          </article>
+
+          <article class="card">
             <h3>NBA ShotIQ</h3>
             <p><em>Jan 2026 - Feb 2026</em></p>
             <p>
