@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-theme="dark">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
   <header class="site-header">
     <div class="container header-content">
       <a class="brand" href="#home" aria-label="Go to home">
@@ -52,6 +53,7 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1>I'm Praveen.</h1>
+          <p class="hero-subtitle">Data scientist specializing in biomedical ML, statistical modeling, and sports analytics. NIH Postbaccalaureate Research Fellow at the Framingham Heart Study.</p>
 
           <div class="hero-actions">
             <a class="btn primary" href="#postgrad">View Current Work</a>
@@ -74,7 +76,8 @@
             <p><strong>Current Role:</strong> NIH Postbaccalaureate Research Fellow, Framingham Heart Study.</p>
             <p><strong>Education:</strong> B.S. Statistics and Analytics, UNC Chapel Hill.</p>
             <p><strong>Location:</strong> Boston, MA.</p>
-            <p><strong>Focus Areas:</strong> Biomedical research, sports analytics, and applied data science.</p>
+            <p><strong>Focus Areas:</strong> Biomedical ML, proteomics, sports analytics, product analytics.</p>
+            <p><strong>Availability:</strong> Late 2026.</p>
           </div>
         </aside>
       </div>
@@ -130,19 +133,19 @@
     <section id="postgrad" class="section fade section-accent">
       <div class="container">
         <p class="eyebrow">Post-Graduate Work</p>
-        <h2 class="section-title">NIH projects focused on bioinformatics and biomedical data science.</h2>
+        <h2 class="section-title">NIH projects in large-scale proteomics, ML classification, and clinical biomarker discovery.</h2>
 
         <div class="experience-grid balanced-grid">
           <article class="card">
             <h3>Framingham Heart Study: Proteomic Biomarker Discovery</h3>
             <p><em>Sep 2025 - Present</em></p>
             <p>
-              Leading analysis pipelines for heavy menstrual bleeding biomarker discovery using large-scale
-              proteomic data from the Framingham cohort.
+              Leading multi-stage feature selection and network-style analyses across large-scale
+              proteomic data to develop candidate biomarker panels and protein-informed risk scores.
             </p>
             <ul class="list-clean">
               <li>Analyzing approximately 3,000 proteins across roughly 25,000 participant records (about 75 million protein-level values).</li>
-              <li>Using multi-stage feature selection and network-style analyses to narrow thousands of signals into candidate biomarker panels.</li>
+              <li>Applying multi-stage feature selection and network-style analyses to narrow thousands of signals into candidate biomarker panels.</li>
               <li>Building protein-informed risk score prototypes aimed at earlier clinical detection.</li>
             </ul>
           </article>
@@ -151,13 +154,14 @@
             <h3>Framingham Heart Study: Platelet Extremes Modeling</h3>
             <p><em>Jan 2026 - Present</em></p>
             <p>
-              Building a machine learning framework to differentiate platelet extreme phenotypes in patients,
-              with emphasis on robust feature engineering and interpretable model outputs.
+              Building an ML classification framework to differentiate platelet extreme phenotypes,
+              with cross-validated evaluation and emphasis on precision, recall, and calibration
+              for interpretable clinical models.
             </p>
             <ul class="list-clean">
-              <li>Defining reproducible cohort segments and phenotype boundaries for low and high platelet states in more than 3,000 patients.</li>
-              <li>Testing classification workflows that combine clinical covariates with omics-style features under cross-validated evaluation.</li>
-              <li>Tracking precision, recall, and calibration to prioritize models that are both reliable and interpretable.</li>
+              <li>Defining reproducible cohort segments and phenotype boundaries across 3,000+ patients.</li>
+              <li>Testing classification workflows combining clinical covariates with omics-style features under cross-validated evaluation.</li>
+              <li>Tracking precision, recall, and calibration to prioritize models that are reliable and interpretable for clinical use.</li>
             </ul>
           </article>
         </div>
@@ -190,13 +194,13 @@
             <h3>LitLens</h3>
             <p><em>Feb 2026 - Mar 2026</em></p>
             <p>
-              Built a biomedical literature intelligence engine that retrieves, deduplicates, ranks, and synthesises research evidence from PubMed and Semantic Scholar in under 10 seconds.
+              Built a biomedical literature intelligence engine retrieving and synthesising research evidence from PubMed and Semantic Scholar in under 10 seconds.
             </p>
             <ul class="list-clean">
-              <li>Queried PubMed and Semantic Scholar in parallel, retrieving up to 50 candidate papers and deduplicating across sources using exact DOI matching and fuzzy title similarity.</li>
-              <li>Reranked papers using a hybrid of semantic cosine similarity (sentence-transformers, all-MiniLM-L6-v2) and Okapi BM25, weighting semantic relevance at 65%.</li>
-              <li>Built a query intent classifier to distinguish intervention, descriptive, and search-term inputs, producing directionally appropriate evidence summaries with full citation traceability.</li>
-              <li>Deployed as a zero-configuration Streamlit app with no paid APIs, no database, and extractive synthesis where every output sentence traces verbatim to a source abstract.</li>
+              <li>Retrieved and deduplicated up to 50 candidate papers from PubMed and Semantic Scholar in parallel.</li>
+              <li>Reranked using hybrid semantic cosine similarity (sentence-transformers) and Okapi BM25 at 65% semantic weight.</li>
+              <li>Built a query intent classifier for intervention, descriptive, and search-term inputs with directional evidence framing.</li>
+              <li>Deployed as a zero-config Streamlit app with no paid APIs and full citation traceability to source abstracts.</li>
             </ul>
             <a href="https://litlens.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
             <a href="https://github.com/praveenpuviindran/litlens" target="_blank" rel="noreferrer" class="inline-link">GitHub Repository</a>
@@ -206,37 +210,29 @@
             <h3>NBA ShotIQ</h3>
             <p><em>Jan 2026 - Feb 2026</em></p>
             <p>
-              Built an end-to-end shot analytics system that combines expected-FG modeling with recruiter-ready analytics delivery.
-            </p>
-            <p>
-              <strong>Tech Stack:</strong> Python, SQL, SQLite, pandas, numpy, scikit-learn, XGBoost, Streamlit, Tableau Public
+              Built an end-to-end shot analytics system combining expected-FG modeling with interactive dashboards.
             </p>
             <ul class="list-clean">
-              <li>Built expected-FG workflows to benchmark shot quality against real shooting efficiency.</li>
-              <li>Delivered a Tableau Public dashboard with KPI row (Total Shots, Weighted xEV, Points Over Expected).</li>
+              <li>Built SQLite pipelines and XGBoost models to benchmark shot quality against real shooting efficiency.</li>
+              <li>Delivered KPIs (Total Shots, Weighted xEV, Points Over Expected) via a Tableau Public dashboard.</li>
               <li>Added Shot Quality vs Efficiency scatter, player leaderboard, and interactive player/season/game-type filters.</li>
-              <li>Included Hexbin/Court Zone maps and spot-level diagnostics for model evaluation and decision support.</li>
+              <li>Included hexbin court zone maps and spot-level diagnostics for model evaluation and decision support.</li>
             </ul>
             <a href="https://nbashotiq.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Demo</a>
             <a href="https://github.com/praveenpuviindran/nba_shotiq" target="_blank" rel="noreferrer" class="inline-link">GitHub Repository</a>
           </article>
 
           <article class="card">
-            <h3>MindLift Experiment Workflow Project (Synthetic Product Analytics)</h3>
+            <h3>MindLift Experiment Workflow (Synthetic Product Analytics)</h3>
             <p><em>Feb 2026</em></p>
             <p>
-              Built an end-to-end experimentation workflow for a synthetic subscription mental health app dataset.
-              Implemented realistic event simulation, analytics SQL metrics, A/B analysis, guardrail evaluation,
-              and a final decision dashboard.
-            </p>
-            <p>
-              <strong>Tech Stack:</strong> Python, SQL, PostgreSQL, pandas, numpy, scipy, statsmodels,
-              scikit-learn, SQLAlchemy, Streamlit, pytest
+              Built an end-to-end A/B testing framework for a synthetic mental health subscription app.
             </p>
             <ul class="list-clean">
-              <li>Designed synthetic event data with seasonality, missingness, duplicates, noncompliance, and heterogeneous treatment effects.</li>
-              <li>Built reproducible metrics and experiment workflow from raw events to final recommendation.</li>
-              <li>Added guardrail-driven decision logic and a documentation-rich Streamlit walkthrough.</li>
+              <li>Implemented realistic event simulation with seasonality, missingness, and heterogeneous treatment effects.</li>
+              <li>Developed a PostgreSQL metrics pipeline covering the full workflow from raw events to final recommendation.</li>
+              <li>Added guardrail-driven decision logic and a documentation-rich Streamlit walkthrough dashboard.</li>
+              <li>Wrote a reproducible test suite with pytest covering simulation, metrics, and experiment decision logic.</li>
             </ul>
             <a href="https://e2e-experimentation-testing.streamlit.app/" target="_blank" rel="noreferrer" class="btn ghost">Visit Live Dashboard</a>
             <a href="https://github.com/praveenpuviindran/e2e-experimentation-testing" target="_blank" rel="noreferrer" class="inline-link">GitHub Repository</a>
